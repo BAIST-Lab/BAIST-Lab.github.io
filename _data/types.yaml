@@ -186,6 +186,11 @@ journal:
   text: Journal
   tooltip: Journal
 
+conference:
+  icon: fa-solid fa-comments
+  text: Conference
+  tooltip: Conference
+
 preprint:
   icon: fa-regular fa-eye
   text: Preprint

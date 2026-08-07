@@ -4,12 +4,12 @@
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"
     {% endif %}
-    aria-label="{{ include.title | default: "card link" | regex_strip }}"
+    aria-label="{{ include.title.en | default: include.title | regex_strip }}"
     class="card-image"
   >
     <img
       src="{{ include.image | relative_url | uri_escape }}"
-      alt="{{ include.title | default: "card image" | regex_strip }}"
+      alt="{{ include.title.en | default: include.title | regex_strip }}"
       loading="lazy"
       {% include fallback.html %}
     >
@@ -26,17 +26,17 @@
         {% endif %}
         class="card-title"
       >
-        {{ include.title }}
+        {% include t.html value=include.title %}
     </a>
     {% endif %}
 
     {% if include.subtitle %}
-      <span class="card-subtitle">{{ include.subtitle }}</span>
+      <span class="card-subtitle">{% include t.html value=include.subtitle %}</span>
     {% endif %}
 
     {% if include.description %}
       <p>
-        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
+        {% include t.html value=include.description %}
       </p>
     {% endif %}
 

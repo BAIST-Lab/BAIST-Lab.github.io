@@ -1,24 +1,26 @@
 ---
-title: Research
+title: Publications
 nav:
   order: 1
   tooltip: Published works
+  title: {zh: 研究成果, en: Publications}
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# {% include icon.html icon="fa-solid fa-microscope" %}研究成果
+{: .lang-zh}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# {% include icon.html icon="fa-solid fa-microscope" %}Publications
+{: .lang-en}
+
+实验室在时空数据挖掘、机器学习等领域发表多篇高水平论文。J 表示期刊论文，C 表示会议论文。
+
+{: .lang-zh}
+
+The lab publishes research in spatiotemporal data mining and machine learning. J denotes journal papers, C denotes conference papers.
+
+{: .lang-en}
 
 {% include section.html %}
-
-## Highlighted
-
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
-
-{% include section.html %}
-
-## All
 
 {% include search-box.html %}
 

@@ -1,27 +1,25 @@
 ---
-title: Projects
+title: Research Projects
 nav:
   order: 2
-  tooltip: Software, datasets, and more
+  tooltip: Research projects
+  title: {zh: 研究项目, en: Research Projects}
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}研究项目
+{: .lang-zh}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# {% include icon.html icon="fa-solid fa-wrench" %}Research Projects
+{: .lang-en}
 
-{% include tags.html tags="publication, resource, website" %}
+实验室目前承担多项科研项目，涵盖国家自然科学基金、广东省及深圳市科技项目，以及与企业的产学研合作项目。
 
-{% include search-info.html %}
+{: .lang-zh}
+
+The lab is currently engaged in several research projects, including NSFC grants, Guangdong and Shenzhen science &amp; technology programs, and industry-academia collaborations.
+
+{: .lang-en}
 
 {% include section.html %}
 
-## Featured
-
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+{% include list.html component="card" data="projects" %}
