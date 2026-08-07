@@ -9,6 +9,78 @@
   {% assign citation = include %}
 {% endif %}
 
+{% if include.style == "list" %}
+  {% assign type = site.data.types[citation.type] %}
+  <div class="citation citation-list">
+    <span class="citation-type-badge" data-type="{{ citation.type | default: "paper" }}">
+      {{ citation.type | default: "paper" | slice: 0, 1 | upcase }}
+    </span>
+
+    <div class="citation-list-main">
+      <a
+        {% if citation.link %}
+          href="{{ citation.link | relative_url | xml_escape }}"
+        {% endif %}
+        class="citation-list-title"
+        target="_blank" rel="noopener noreferrer"
+      >
+        {{ citation.title | default: "[no title info]" }}
+      </a>
+
+      <div class="citation-list-authors">
+        {{
+          citation.authors
+          | join: ","
+          | split: ","
+          | array_carve: 5
+          | join: ", "
+          | markdownify
+          | remove: "<p>" | remove: "</p>"
+          | default: "[no author info]"
+        }}
+      </div>
+
+      <div class="citation-list-details">
+        <span class="citation-publisher">
+          {{- citation.publisher | default: "[no publisher info]" -}}
+        </span>
+        &nbsp;·&nbsp;
+        <span class="citation-date">
+          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
+        </span>
+        {% if citation.id %}
+          &nbsp;·&nbsp;
+          <span class="citation-id">
+            {{- citation.id -}}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="citation-list-actions">
+      {% if citation.code %}
+        <a
+          href="{{ citation.code | relative_url | xml_escape }}"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Code"
+          data-tooltip="GitHub 代码"
+        >
+          {% include icon.html icon="fa-brands fa-github" %}
+        </a>
+      {% endif %}
+      {% if citation.pdf %}
+        <a
+          href="{{ citation.pdf | relative_url | xml_escape }}"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="PDF"
+          data-tooltip="PDF"
+        >
+          {% include icon.html icon="fa-solid fa-file-pdf" %}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% else %}
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
@@ -110,3 +182,4 @@
     </div>
   </div>
 </div>
+{% endif %}

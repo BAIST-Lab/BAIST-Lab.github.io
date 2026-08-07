@@ -26,4 +26,4 @@ The lab publishes research in spatiotemporal data mining and machine learning. J
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" style="list" %}
