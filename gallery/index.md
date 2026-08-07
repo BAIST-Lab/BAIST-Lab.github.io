@@ -22,21 +22,12 @@ Moments from lab research and activities. Click an image to enlarge.
 
 {% include section.html %}
 
-{% assign gallery_imgs = site.static_files
-  | where_exp: "f", "f.path contains '/images/gallery/'"
-  | sort: "name"
-%}
-
 <div class="gallery-wall">
-  {% for img in gallery_imgs %}
-    <img
-      class="gallery-item"
-      src="{{ img.path | relative_url | uri_escape }}"
-      alt="gallery photo"
-      loading="lazy"
-      onclick="openLightbox(this)"
-    >
-  {% endfor %}
+  <img class="gallery-item" src="{{ "images/gallery/photo1.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
+  <img class="gallery-item" src="{{ "images/gallery/photo2.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
+  <img class="gallery-item" src="{{ "images/gallery/photo3.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
+  <img class="gallery-item" src="{{ "images/gallery/photo4.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
+  <img class="gallery-item" src="{{ "images/gallery/photo5.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
 </div>
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
