@@ -12,18 +12,13 @@
 {% if include.style == "list" %}
   {% assign ref_authors = citation.authors | array_carve: 6 | join: ", " %}
   {% if citation.authors.size > 6 %}
-    {% assign ref_authors = ref_authors | append: ", et al." %}
+    {% assign ref_authors = ref_authors | append: ", et al" %}
   {% endif %}
   <div class="citation citation-reference">
     <div class="citation-ref-content">
       <span class="citation-ref-authors">{{ ref_authors }}</span>.{%- if citation.link -%}
       <a class="citation-ref-title" href="{{ citation.link | relative_url | xml_escape }}" target="_blank" rel="noopener noreferrer">{{ citation.title | default: "[no title info]" }}</a>{%- else -%}
-      <span class="citation-ref-title">{{ citation.title | default: "[no title info]" }}</span>{%- endif -%},
-      <span class="citation-ref-venue">in {{ citation.publisher | default: "[no publisher info]" }}</span>.{%- if citation.code or citation.pdf -%}
-      <span class="citation-ref-actions">{%- if citation.code -%}
-        <a href="{{ citation.code | relative_url | xml_escape }}" target="_blank" rel="noopener noreferrer" aria-label="Code" data-tooltip="GitHub 代码">{% include icon.html icon="fa-brands fa-github" %}</a>{%- endif -%}{%- if citation.pdf -%}
-        <a href="{{ citation.pdf | relative_url | xml_escape }}" target="_blank" rel="noopener noreferrer" aria-label="PDF" data-tooltip="PDF">{% include icon.html icon="fa-solid fa-file-pdf" %}</a>{%- endif -%}
-      </span>{%- endif -%}
+      <span class="citation-ref-title">{{ citation.title | default: "[no title info]" }}</span>{%- endif -%}, <span class="citation-ref-venue">in {{ citation.publisher | default: "[no publisher info]" }}</span>.{%- if citation.code or citation.pdf -%} <span class="citation-ref-actions">{%- if citation.code -%}<a href="{{ citation.code | relative_url | xml_escape }}" target="_blank" rel="noopener noreferrer" aria-label="Code" data-tooltip="GitHub 代码">{% include icon.html icon="fa-brands fa-github" %}</a>{%- endif -%}{%- if citation.pdf -%}<a href="{{ citation.pdf | relative_url | xml_escape }}" target="_blank" rel="noopener noreferrer" aria-label="PDF" data-tooltip="PDF">{% include icon.html icon="fa-solid fa-file-pdf" %}</a>{%- endif -%}</span>{%- endif -%}
     </div>
   </div>
 {% else %}
