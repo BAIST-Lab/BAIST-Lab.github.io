@@ -5,6 +5,6 @@
 
   # MiSevenJoy's Website
 
-  Visit **[website URL](#)** 🚀
+  Visit **[misevenjoy.github.io/lab-site](https://misevenjoy.github.io/lab-site)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
