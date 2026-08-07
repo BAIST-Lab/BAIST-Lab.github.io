@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" data-dark="false" data-lang="zh">
   {% include head.html %}
-  <body>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     {% include header.html %}
     <main>
       {% include content.html content=content %}

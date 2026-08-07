@@ -26,7 +26,7 @@ items:
     - Hui Wang
     - Xun Zhou
     - Zenglin Xu
-    publisher: Artificial Intelligence Review
+    publisher: Artificial Intelligence Review (accepted)
     date: '2026-01-01'
     type: journal
 
@@ -37,7 +37,7 @@ items:
     - Xun Zhou
     - Yitian Shao
     - Jun Luo
-    publisher: IEEE International Conference on Big Data (BigData)
+    publisher: IEEE BigData 2025
     date: '2025-12-05'
     type: conference
 
@@ -53,7 +53,7 @@ items:
     - Xun Zhou
     - Yuan Qi
     - Zenglin Xu
-    publisher: The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)
+    publisher: ACL 2025
     date: '2025-07-27'
     type: conference
 
@@ -66,7 +66,7 @@ items:
     - Ronilo Ragodos
     - Zenglin Xu
     - Jun Luo
-    publisher: AAAI Conference on Artificial Intelligence (AAAI)
+    publisher: AAAI 2025
     date: '2025-02-25'
     type: conference
 
@@ -78,7 +78,7 @@ items:
     - Tong Wang
     - Yajun Pan
     - Jun Luo
-    publisher: ACM SIGSPATIAL Conference on Advances in Geographic Information Systems (SIGSPATIAL)
+    publisher: SIGSPATIAL 2025
     date: '2025-11-04'
     type: conference
 

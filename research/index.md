@@ -1,5 +1,6 @@
 ---
 title: Publications
+body_class: page-research
 nav:
   order: 1
   tooltip: Published works
