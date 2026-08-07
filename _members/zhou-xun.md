@@ -1,5 +1,6 @@
 ---
 name: {zh: 周逊, en: Xun Zhou}
+title: Xun Zhou
 image: images/team/zhouxun.jpg
 role: professor
 description: {zh: 教授、博士生导师, en: Professor, PhD Advisor}

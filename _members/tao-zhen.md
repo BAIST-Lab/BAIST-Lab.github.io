@@ -1,5 +1,6 @@
 ---
 name: {zh: 陶震, en: Zhen Tao}
+title: Zhen Tao
 image: images/team/taozhen.jpg
 role: phd
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}

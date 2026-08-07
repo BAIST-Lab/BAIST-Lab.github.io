@@ -1,5 +1,6 @@
 ---
 name: {zh: 李飞羽, en: Feiyu Li}
+title: Feiyu Li
 image: images/team/lifeiyu.jpg
 role: phd
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}

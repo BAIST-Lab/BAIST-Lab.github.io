@@ -1,5 +1,6 @@
 ---
 name: {zh: 王嘉泽, en: Jiaze Wang}
+title: Jiaze Wang
 image: images/team/wangjiaze.jpg
 role: phd
 description: {zh: 2024级博士生, en: PhD Student (Class of 2024)}

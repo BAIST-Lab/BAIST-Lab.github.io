@@ -1,5 +1,6 @@
 ---
 name: {zh: 刘彬慧, en: Binhui Liu}
+title: Binhui Liu
 image: images/team/liubinhui.jpg
 role: master
 description: {zh: 2026级硕士生, en: Master Student (Class of 2026)}

@@ -1,5 +1,6 @@
 ---
 name: {zh: 时旭, en: Xu Shi}
+title: Xu Shi
 image: images/team/shixu.jpg
 role: phd
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}

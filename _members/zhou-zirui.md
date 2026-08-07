@@ -1,5 +1,6 @@
 ---
 name: {zh: 周子瑞, en: Zirui Zhou}
+title: Zirui Zhou
 image: images/team/zhouzirui.jpg
 role: master
 description: {zh: 2023级硕士生, en: Master Student (Class of 2023)}

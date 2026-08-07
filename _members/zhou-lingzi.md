@@ -1,5 +1,6 @@
 ---
 name: {zh: 周铃子, en: Lingzi Zhou}
+title: Lingzi Zhou
 image: images/team/zhoulingzi.jpg
 role: phd
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}

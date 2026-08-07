@@ -1,5 +1,6 @@
 ---
 name: {zh: 张窅溥, en: Yaopu Zhang}
+title: Yaopu Zhang
 image: images/team/zhangyaopu.png
 role: phd
 description: {zh: 2024级博士生, en: PhD Student (Class of 2024)}

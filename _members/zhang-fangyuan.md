@@ -1,5 +1,6 @@
 ---
 name: {zh: 张芳源, en: Fangyuan Zhang}
+title: Fangyuan Zhang
 image: images/team/zhangfangyuan.png
 role: professor
 description: {zh: 教授、博士生导师、国家级青年人才, en: Professor, PhD Advisor, National-level Young Talent}
