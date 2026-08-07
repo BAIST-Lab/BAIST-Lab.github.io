@@ -2,29 +2,41 @@
 
 # team member roles
 
+professor:
+  icon: fa-solid fa-microscope
+  description: {zh: 教授、博士生导师, en: Professor, PhD Advisor}
+
 principal-investigator:
   icon: fa-solid fa-microscope
-  description: Principal Investigator
+  description: {zh: 教授、博士生导师, en: Principal Investigator}
 
 postdoc:
   icon: fa-solid fa-glasses
-  description: Postdoctoral Researcher
+  description: {zh: 博士后, en: Postdoctoral Researcher}
+
+teacher:
+  icon: fa-solid fa-chalkboard-user
+  description: {zh: 教师, en: Teacher}
 
 phd:
   icon: fa-solid fa-graduation-cap
-  description: PhD Student
+  description: {zh: 博士生, en: PhD Student}
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: {zh: 硕士生, en: Master Student}
 
 undergrad:
   icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+  description: {zh: 本科生, en: Undergraduate Student}
 
-programmer:
-  icon: fa-solid fa-code
-  description: Programmer
+graduate:
+  icon: fa-solid fa-user-check
+  description: {zh: 毕业生, en: Graduate}
 
 mascot:
   icon: fa-solid fa-dog
-  description: Mascot
+  description: {zh: 吉祥物, en: Mascot}
 
 # general
 

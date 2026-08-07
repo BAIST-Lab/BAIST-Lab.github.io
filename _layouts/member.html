@@ -20,8 +20,10 @@ layout: default
 
 {{ content }}
 
+{% assign member_name = page.name.en | default: page.name %}
+
 {% assign aliases = page.aliases
-  | default: page.name
+  | default: member_name
   | default: page.title
   | join: ","
   | split: ","
@@ -34,7 +36,8 @@ layout: default
 
 <p class="center">
   <a href="{{ search | relative_url | uri_escape }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
+    <span class="lang-zh">在「研究成果」页面查找 {{ member_name }} 的论文</span>
+    <span class="lang-en">Search for {{ member_name }}'s papers on the Research page</span>
   </a>
 </p>
 

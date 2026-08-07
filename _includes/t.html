@@ -1,0 +1,6 @@
+{%- assign v = include.value -%}
+{%- if v.zh and v.en -%}
+  <span class="lang-zh">{{ v.zh }}</span><span class="lang-en">{{ v.en }}</span>
+{%- else -%}
+  {{ v }}
+{%- endif -%}

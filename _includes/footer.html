@@ -25,7 +25,8 @@
 
   <div>
     &copy; {{ site.time | date: "%Y" }}
-    {{ site.title }}
+    <span class="lang-zh">{{ site.title }}</span>
+    {% if site.title_en %}<span class="lang-en">{{ site.title_en }}</span>{% endif %}
     &nbsp; | &nbsp; Built with
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template

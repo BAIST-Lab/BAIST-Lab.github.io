@@ -29,10 +29,16 @@
     {% if site.logo-text != false %}
       <span class="title-text" data-tooltip="Home">
         {% if site.title and site.show-title != false %}
-          <span class="title">{{ site.title }}</span>
+          <span class="title">
+            <span class="lang-zh">{{ site.title }}</span>
+            {% if site.title_en %}<span class="lang-en">{{ site.title_en }}</span>{% endif %}
+          </span>
         {% endif %}
         {% if site.subtitle and site.show-subtitle != false %}
-          <span class="subtitle">{{ site.subtitle }}</span>
+          <span class="subtitle">
+            <span class="lang-zh">{{ site.subtitle }}</span>
+            {% if site.subtitle_en %}<span class="lang-en">{{ site.subtitle_en }}</span>{% endif %}
+          </span>
         {% endif %}
       </span>
     {% endif %}
@@ -51,9 +57,21 @@
           href="{{ page.dir | relative_url | uri_escape }}"
           data-tooltip="{{ page.nav.tooltip | xml_escape }}"
         >
-          {{ page.title }}
+          {% if page.nav.title %}
+            {% include t.html value=page.nav.title %}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
         </a>
       {% endif %}
     {% endfor %}
+
+    <button
+      type="button"
+      id="lang-toggle"
+      class="lang-toggle"
+      onclick="toggleLang()"
+      aria-label="Switch language"
+    >EN</button>
   </nav>
 </header>

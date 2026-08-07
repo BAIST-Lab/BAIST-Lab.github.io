@@ -16,7 +16,7 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" | regex_strip }}"
+    aria-label="{{ member.name.en | default: member.name | regex_strip }}"
   >
     {% if type %}
       {% include icon.html icon=type.icon %}
@@ -32,19 +32,23 @@
 
     {% if member.name %}
       <span class="portrait-name">
-        {{ member.name }}
+        {% include t.html value=member.name %}
       </span>
     {% endif %}
 
     {% if member.description or type %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
+        {% if member.description %}
+          {% include t.html value=member.description %}
+        {% else %}
+          {% include t.html value=type.description %}
+        {% endif %}
       </span>
     {% endif %}
 
     {% if member.affiliation %}
       <span class="portrait-affiliation">
-        {{ member.affiliation }}
+        {% include t.html value=member.affiliation %}
       </span>
     {% endif %}
   </a>
