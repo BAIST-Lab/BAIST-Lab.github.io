@@ -1,19 +1,17 @@
 # site properties and page defaults
-title: MiSevenJoy
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
+title: 时空大数据智能与计算实验室
+title_en: Spatiotemporal Big Data Intelligence and Computing Lab
+subtitle: 哈尔滨工业大学（深圳）计算机科学与技术学院
+subtitle_en: School of Computer Science and Technology, HIT Shenzhen
+description: 实验室研究方向为数据挖掘、机器学习、时空大数据分析与智能，智慧城市等。
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
 
 # site social media and other links
 links:
-  email: contact@MiSevenJoy.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: contact@your-lab.com
   github: MiSevenJoy
-  twitter: MiSevenJoy
-  youtube: MiSevenJoy
 
 ### jekyll settings
 
