@@ -11,6 +11,8 @@ module Jekyll
 
     # omit middle items of array with ellipsis, leave N items on either side
     def array_carve(array, length = 3)
+      return array if array.nil?
+
       if array.length <= length * 2
         return array
       else

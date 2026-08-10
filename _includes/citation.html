@@ -9,9 +9,11 @@
   {% assign citation = include %}
 {% endif %}
 
+{% assign citation_authors = citation.authors | default: "" | split: "," %}
+
 {% if include.style == "list" %}
-  {% assign ref_authors = citation.authors | array_carve: 6 | join: ", " %}
-  {% if citation.authors.size > 6 %}
+  {% assign ref_authors = citation_authors | array_carve: 6 | join: ", " %}
+  {% if citation_authors.size > 6 %}
     {% assign ref_authors = ref_authors | append: ", et al" %}
   {% endif %}
   <div class="citation citation-reference">
@@ -56,13 +58,13 @@
 
       <div
         class="citation-authors"
-        {% if citation.authors.size > 10 %}
-          data-tooltip="{{ citation.authors | join: ", " | xml_escape }}"
+        {% if citation_authors.size > 10 %}
+          data-tooltip="{{ citation_authors | join: ", " | xml_escape }}"
         {% endif %}
         tabindex="0"
       >
         {{
-          citation.authors
+          citation_authors
           | join: ","
           | split: ","
           | array_carve: 5
