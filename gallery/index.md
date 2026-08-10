@@ -21,11 +21,14 @@ Moments from lab research and activities. Click an image to enlarge.
 
 <div class="gallery-wall">
   {% for photo in site.data.gallery.photos %}
+  {% assign cap_zh = photo.caption.zh | default: '' | strip %}
+  {% assign cap_en = photo.caption.en | default: '' | strip %}
   <figure class="gallery-figure">
-    <img class="gallery-item" src="{{ photo.image | relative_url | uri_escape }}" alt="{{ photo.caption.zh | default: photo.caption.en | default: 'gallery photo' | xml_escape }}" loading="lazy" onclick="openLightbox(this)">
-    {% if photo.caption.zh or photo.caption.en %}
+    <img class="gallery-item" src="{{ photo.image | relative_url | uri_escape }}" alt="{{ cap_zh | default: cap_en | default: 'gallery photo' | xml_escape }}" loading="lazy" onclick="openLightbox(this)">
+    {% if cap_zh != '' or cap_en != '' %}
     <figcaption class="gallery-caption">
-      <span class="lang-zh">{{ photo.caption.zh }}</span><span class="lang-en">{{ photo.caption.en }}</span>
+      {% if cap_zh != '' %}<span class="lang-zh">{{ cap_zh }}</span>{% endif %}
+      {% if cap_en != '' %}<span class="lang-en">{{ cap_en }}</span>{% endif %}
     </figcaption>
     {% endif %}
   </figure>
