@@ -20,11 +20,16 @@ Moments from lab research and activities. Click an image to enlarge.
 {% include section.html %}
 
 <div class="gallery-wall">
-  <img class="gallery-item" src="{{ "images/gallery/photo1.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
-  <img class="gallery-item" src="{{ "images/gallery/photo2.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
-  <img class="gallery-item" src="{{ "images/gallery/photo3.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
-  <img class="gallery-item" src="{{ "images/gallery/photo4.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
-  <img class="gallery-item" src="{{ "images/gallery/photo5.jpg" | relative_url | uri_escape }}" alt="gallery photo" loading="lazy" onclick="openLightbox(this)">
+  {% for photo in site.data.gallery.photos %}
+  <figure class="gallery-figure">
+    <img class="gallery-item" src="{{ photo.image | relative_url | uri_escape }}" alt="{{ photo.caption.zh | default: photo.caption.en | default: 'gallery photo' | xml_escape }}" loading="lazy" onclick="openLightbox(this)">
+    {% if photo.caption.zh or photo.caption.en %}
+    <figcaption class="gallery-caption">
+      <span class="lang-zh">{{ photo.caption.zh }}</span><span class="lang-en">{{ photo.caption.en }}</span>
+    </figcaption>
+    {% endif %}
+  </figure>
+  {% endfor %}
 </div>
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
