@@ -12,6 +12,7 @@
 {% if include.sort %}
   {% assign data = data | sort: include.sort %}
 
+  <div class="list-grid">
   {% for d in data %}
     {% assign style = d.style | default: include.style %}
 
@@ -49,6 +50,7 @@
       width=d.width
     %}
   {% endfor %}
+  </div>
 {% else %}
   {% assign years = data
     | group_by_exp: "d", "d.date | date: '%Y'"
