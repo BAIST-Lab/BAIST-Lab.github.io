@@ -9,7 +9,8 @@
   {% assign citation = include %}
 {% endif %}
 
-{% assign citation_authors = citation.authors | default: "" | split: "," %}
+{% assign emptyarray = "" | split: "," %}
+{% assign citation_authors = citation.authors | default: emptyarray %}
 
 {% if include.style == "list" %}
   {% assign ref_authors = citation_authors | array_carve: 6 | join: ", " %}
