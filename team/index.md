@@ -2,7 +2,6 @@
 title: Team
 nav:
   order: 3
-  tooltip: About our team
   title: {zh: 团队成员, en: People}
   menu:
     - {title: {zh: 全部成员, en: People}, anchor: people}

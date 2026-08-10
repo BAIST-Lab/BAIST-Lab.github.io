@@ -2,7 +2,6 @@
 title: Join Us
 nav:
   order: 5
-  tooltip: Openings
   title: {zh: 招生计划, en: Join Us}
 ---
 

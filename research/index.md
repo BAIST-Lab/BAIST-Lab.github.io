@@ -3,7 +3,6 @@ title: Publications
 body_class: page-research
 nav:
   order: 1
-  tooltip: Published works
   title: {zh: 研究成果, en: Publications}
 ---
 

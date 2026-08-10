@@ -2,7 +2,6 @@
 title: Research Projects
 nav:
   order: 2
-  tooltip: Research projects
   title: {zh: 研究项目, en: Research Projects}
 ---
 

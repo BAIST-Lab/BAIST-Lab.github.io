@@ -2,7 +2,6 @@
 title: Gallery
 nav:
   order: 4
-  tooltip: Photos
   title: {zh: 相册, en: Gallery}
 ---
 

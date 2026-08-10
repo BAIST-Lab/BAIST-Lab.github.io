@@ -2,7 +2,6 @@
 title: Contact
 nav:
   order: 6
-  tooltip: Email and address
   title: {zh: 联系我们, en: Contact}
 ---
 

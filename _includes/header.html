@@ -27,7 +27,7 @@
       </span>
     {% endif %}
     {% if site.logo-text != false %}
-      <span class="title-text" data-tooltip="Home">
+      <span class="title-text">
         {% if site.title and site.show-title != false %}
           <span class="title">
             <span class="lang-zh">{{ site.title }}</span>
@@ -58,7 +58,6 @@
             <a
               href="{{ page.dir | relative_url | uri_escape }}"
               class="nav-dropdown-title"
-              data-tooltip="{{ page.nav.tooltip | xml_escape }}"
             >
               {% include t.html value=page.nav.title %}
             </a>
@@ -75,7 +74,6 @@
         {% else %}
           <a
             href="{{ page.dir | relative_url | uri_escape }}"
-            data-tooltip="{{ page.nav.tooltip | xml_escape }}"
           >
             {% if page.nav.title %}
               {% include t.html value=page.nav.title %}
