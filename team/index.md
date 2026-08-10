@@ -20,11 +20,9 @@ nav:
 {: .lang-en #people-en}
 
 时空大数据智能与计算实验室由周逊教授于 2023 年秋季在哈尔滨工业大学（深圳）计算机科学与技术学院组建，现有教授、博士生、硕士生等成员二十余人，围绕时空数据挖掘与人工智能开展研究。
-
 {: .lang-zh}
 
 The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. Xun Zhou at the School of Computer Science and Technology, HIT Shenzhen in Fall 2023. The group currently includes faculty, PhD students, and master's students who work on spatiotemporal data mining and artificial intelligence.
-
 {: .lang-en}
 
 {% include section.html %}

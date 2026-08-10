@@ -7,9 +7,7 @@ date: '2026-09-01'
 description: {zh: 2026级硕士生, en: Master Student (Class of 2026)}
 ---
 刘彬慧，2026级硕士生。
-
 {: .lang-zh}
 
 Binhui Liu, Master Student (Class of 2026).
-
 {: .lang-en}

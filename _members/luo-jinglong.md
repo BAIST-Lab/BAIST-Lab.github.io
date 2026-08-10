@@ -7,9 +7,7 @@ date: '2022-09-01'
 description: {zh: 2022级博士毕业生, en: PhD Graduate (Class of 2022)}
 ---
 罗景龙，2022级博士生。
-
 {: .lang-zh}
 
 Jinglong Luo, PhD Student (Class of 2022).
-
 {: .lang-en}

@@ -7,9 +7,7 @@ date: '2025-09-01'
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
 ---
 时旭，2025级博士生。
-
 {: .lang-zh}
 
 Xu Shi, PhD Student (Class of 2025).
-
 {: .lang-en}

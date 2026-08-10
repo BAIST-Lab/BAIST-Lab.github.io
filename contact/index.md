@@ -12,11 +12,9 @@ nav:
 {: .lang-en}
 
 欢迎通过邮件与我们联系。
-
 {: .lang-zh}
 
 Feel free to reach out to us by email.
-
 {: .lang-en}
 
 {%
@@ -37,9 +35,7 @@ Feel free to reach out to us by email.
 {% include section.html %}
 
 哈尔滨工业大学（深圳）计算机科学与技术学院，广东省深圳市南山区西丽大学城哈尔滨工业大学（深圳）。
-
 {: .lang-zh}
 
 School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, Xili University Town, Nanshan District, Shenzhen, Guangdong, China.
-
 {: .lang-en}

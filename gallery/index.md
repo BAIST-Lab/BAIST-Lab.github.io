@@ -12,11 +12,9 @@ nav:
 {: .lang-en}
 
 实验室科研活动与生活瞬间，点击图片可放大查看。
-
 {: .lang-zh}
 
 Moments from lab research and activities. Click an image to enlarge.
-
 {: .lang-en}
 
 {% include section.html %}
