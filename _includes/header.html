@@ -53,16 +53,37 @@
     %}
     {% for page in pages %}
       {% if page.nav %}
-        <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
-        >
-          {% if page.nav.title %}
-            {% include t.html value=page.nav.title %}
-          {% else %}
-            {{ page.title }}
-          {% endif %}
-        </a>
+        {% if page.nav.menu %}
+          <div class="nav-dropdown">
+            <a
+              href="{{ page.dir | relative_url | uri_escape }}"
+              class="nav-dropdown-title"
+              data-tooltip="{{ page.nav.tooltip | xml_escape }}"
+            >
+              {% include t.html value=page.nav.title %}
+            </a>
+            <div class="nav-dropdown-menu">
+              {% for item in page.nav.menu %}
+                <a
+                  href="{{ page.dir | relative_url | uri_escape }}#{{ item.anchor }}"
+                >
+                  {% include t.html value=item.title %}
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <a
+            href="{{ page.dir | relative_url | uri_escape }}"
+            data-tooltip="{{ page.nav.tooltip | xml_escape }}"
+          >
+            {% if page.nav.title %}
+              {% include t.html value=page.nav.title %}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </a>
+        {% endif %}
       {% endif %}
     {% endfor %}
 
