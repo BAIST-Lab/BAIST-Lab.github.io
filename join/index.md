@@ -2,10 +2,10 @@
 title: Join Us
 nav:
   order: 5
-  title: {zh: 招生计划, en: Join Us}
+  title: {zh: 加入我们, en: Join Us}
 ---
 
-# {% include icon.html icon="fa-solid fa-chalkboard-user" %}招生计划
+# {% include icon.html icon="fa-solid fa-chalkboard-user" %}加入我们
 {: .lang-zh}
 
 # {% include icon.html icon="fa-solid fa-chalkboard-user" %}Join Us
