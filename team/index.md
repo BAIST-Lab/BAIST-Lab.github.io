@@ -5,7 +5,7 @@ nav:
   title: {zh: 团队成员, en: People}
   menu:
     - {title: {zh: 全部成员, en: People}, anchor: people}
-    - {title: {zh: 职工, en: Faculty}, anchor: faculty}
+    - {title: {zh: 教师, en: Faculty}, anchor: faculty}
     - {title: {zh: 博士后, en: Postdocs}, anchor: postdocs}
     - {title: {zh: 博士生, en: Ph.D Students}, anchor: phd}
     - {title: {zh: 硕士生, en: Master Students}, anchor: master}
@@ -29,13 +29,13 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 
 {% include section.html %}
 
-## 职工
+## 教师
 {: .lang-zh #faculty}
 
 ## Faculty
 {: .lang-en #faculty-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'professor' or role == 'teacher'" %}
+{% include list.html data="members" component="portrait" filter="role == 'professor' or role == 'teacher'" sort="date" %}
 
 {% include section.html %}
 
@@ -45,7 +45,7 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 ## Postdocs
 {: .lang-en #postdocs-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'postdoc'" %}
+{% include list.html data="members" component="portrait" filter="role == 'postdoc'" sort="date" %}
 
 {% include section.html %}
 
@@ -55,7 +55,7 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 ## Ph.D Students
 {: .lang-en #phd-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'phd'" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd'" sort="date" %}
 
 {% include section.html %}
 
@@ -65,7 +65,7 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 ## Master Students
 {: .lang-en #master-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'master'" %}
+{% include list.html data="members" component="portrait" filter="role == 'master'" sort="date" %}
 
 {% include section.html %}
 
@@ -75,7 +75,7 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 ## Undergraduate Students
 {: .lang-en #undergraduate-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'undergrad'" %}
+{% include list.html data="members" component="portrait" filter="role == 'undergrad'" sort="date" %}
 
 {% include section.html %}
 
@@ -85,4 +85,4 @@ The Spatiotemporal Big Data Intelligence and Computing Lab was founded by Prof. 
 ## Alumni
 {: .lang-en #alumni-en}
 
-{% include list.html data="members" component="portrait" filter="role == 'graduate'" %}
+{% include list.html data="members" component="portrait" filter="role == 'graduate'" sort="date" %}

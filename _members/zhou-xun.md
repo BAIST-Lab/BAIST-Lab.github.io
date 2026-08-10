@@ -3,6 +3,7 @@ name: {zh: 周逊, en: Xun Zhou}
 title: Xun Zhou
 image: images/team/zhouxun.jpg
 role: professor
+date: '2023-09-01'
 description: {zh: 教授、博士生导师, en: Professor, PhD Advisor}
 links:
   home-page: https://homepage.hit.edu.cn/zhouxun2023
