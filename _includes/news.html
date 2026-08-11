@@ -1,0 +1,12 @@
+{{ " " }}
+<div class="news-card">
+  <a class="news-card-link" href="{{ include.url | relative_url }}">
+    {% if include.image %}
+    <img class="news-image" src="{{ include.image | relative_url }}" alt="{{ include.title | xml_escape }}" loading="lazy">
+    {% endif %}
+    <div class="news-info">
+      <span class="news-title">{{ include.title }}</span>
+      <span class="news-date">{{ include.date | date: "%Y-%m-%d" }}</span>
+    </div>
+  </a>
+</div>

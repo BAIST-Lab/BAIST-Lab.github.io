@@ -16,34 +16,11 @@ The lab conducts research in data mining, machine learning, spatiotemporal big d
 {% include section.html %}
 
 ## 最新进展
-{: .lang-zh}
+{: .lang-zh .center}
 
 ## Highlights
-{: .lang-en}
+{: .lang-en .center}
 
-{% capture text1 %}
-
-精选论文介绍及最新成果。
-{: .lang-zh}
-
-Selected publications and latest research outcomes.
-{: .lang-en}
-
-{%
-  include button.html
-  link="research"
-  text='<span class="lang-zh">查看论文</span><span class="lang-en">See our publications</span>'
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/paper.png"
-  link="research"
-  title='<span class="lang-zh">论文发表</span><span class="lang-en">Selected Publications</span>'
-  text=text1
-%}
+{% for post in site.posts %}
+{% include news.html url=post.url title=post.title image=post.image date=post.date %}
+{% endfor %}

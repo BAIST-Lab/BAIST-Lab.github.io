@@ -31,7 +31,7 @@ defaults:
   - scope:
       type: "posts"
     values:
-      layout: post
+      layout: news
 
 collections:
   # generate page for each member
