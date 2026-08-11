@@ -20,9 +20,15 @@ layout: default
 
 {% if page.attachment %}
 {% include section.html %}
-<div class="center">
-  <a class="button" href="{{ page.attachment | relative_url }}" target="_blank" rel="noopener noreferrer">
-    <span class="lang-zh">下载附件</span><span class="lang-en">Download attachment</span>
-  </a>
-</div>
+{% assign attach_ext = page.attachment | split: "." | last | downcase %}
+{% if attach_ext == "md" or attach_ext == "markdown" %}
+  {% capture md_doc %}{{ page.attachment | file_read }}{% endcapture %}
+  {{ md_doc | markdownify }}
+{% else %}
+  <div class="center">
+    <a class="button" href="{{ page.attachment | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <span class="lang-zh">下载附件</span><span class="lang-en">Download attachment</span>
+    </a>
+  </div>
+{% endif %}
 {% endif %}
