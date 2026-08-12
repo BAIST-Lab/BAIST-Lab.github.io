@@ -7,9 +7,7 @@ layout: default
 {% include portrait.html lookup=page.slug %}
 
 {% if page.homepage %}
-<a class="button" href="{{ page.homepage }}" target="_blank" rel="noopener noreferrer">
-  <span class="lang-zh">个人主页</span><span class="lang-en">Homepage</span>
-</a>
+{% include button.html type="home-page" link=page.homepage style="bare" %}
 {% endif %}
 
 <div>
