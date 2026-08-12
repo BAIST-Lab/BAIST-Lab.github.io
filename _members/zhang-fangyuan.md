@@ -6,6 +6,7 @@ name:
 image: images/team/zhangfangyuan.png
 date: 2024-01-01
 role: professor
+homepage: https://homepage.hit.edu.cn/zhangfangyuan
 description:
   zh: 教授、博士生导师
   en: Professor

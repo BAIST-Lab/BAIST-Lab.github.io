@@ -6,6 +6,12 @@ layout: default
 
 {% include portrait.html lookup=page.slug %}
 
+{% if page.homepage %}
+<a class="button" href="{{ page.homepage }}" target="_blank" rel="noopener noreferrer">
+  <span class="lang-zh">个人主页</span><span class="lang-en">Homepage</span>
+</a>
+{% endif %}
+
 <div>
   {% for link in page.links %}
     {% assign key = link[0] %}
