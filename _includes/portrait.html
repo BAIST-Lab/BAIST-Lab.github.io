@@ -27,6 +27,12 @@
     >
 
     <div class="portrait-info">
+      {% if member.name %}
+        <span class="portrait-name">
+          {% include t.html value=member.name %}
+        </span>
+      {% endif %}
+
       {% if member.description or type %}
         <span class="portrait-description">
           {% if member.description %}
@@ -34,12 +40,6 @@
           {% else %}
             {% include t.html value=type.description %}
           {% endif %}
-        </span>
-      {% endif %}
-
-      {% if member.name %}
-        <span class="portrait-name">
-          {% include t.html value=member.name %}
         </span>
       {% endif %}
 
