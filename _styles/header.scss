@@ -117,7 +117,8 @@ nav > a:hover {
   padding: 5px;
 
   &:hover .nav-dropdown-menu,
-  &:focus-within .nav-dropdown-menu {
+  &:focus-within .nav-dropdown-menu,
+  &.nav-dropdown-open .nav-dropdown-menu {
     display: flex;
   }
 }
