@@ -99,3 +99,50 @@ items:
     date: 2025-01-01
     link: https://doi.org/10.2139/ssrn.5087720
     type: journal
+  - title: "RoPOI: Robust POI Recommendation based on Modality Disentanglement and
+      Missing Representation Generation"
+    authors:
+      - Kai Yang
+      - Xun Zhou
+    publisher: ACM MM 2026
+    date: 2026-06-01
+  - title: "Seeing without Cameras: Interpretable Wireless Fusion for 3D Human Pose
+      Estimation"
+    authors:
+      - Jiaze Wang
+      - Jiayi Tian
+      - Xun Zhou
+      - Qu Mingchao
+      - Tian Xia
+      - Wenzhe zhao
+      - Pengju Ren
+    publisher: ACM MM 2026
+    date: 2026-06-01
+  - id: doi:10.1145/3770855.3817683
+    title: "RePatch: Learning Entropy-Guided Patch Structures with Quantized
+      Representations for Time Series Forecasting"
+    authors:
+      - Hanbin Xiao
+      - Xun Zhou
+      - Rui Huang
+      - Xiucheng Li
+      - Weili Guan
+      - Liqiang Nie
+    publisher: KDD 2026
+    date: 2026-04-30
+    link: https://doi.org/10.1145/3770855.3817683
+    type: conference
+  - id: doi:10.1145/3770855.3817747
+    title: "HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal
+      Prediction via Self-Partitional Mixture-of-Spatial-Experts"
+    authors:
+      - Zirui Zhou
+      - Xun Zhou
+      - Kanyu Bao
+      - Shengxin Liu
+      - Kehai Chen
+      - Min Zhang
+    publisher: KDD 2026
+    date: 2026-04-30
+    link: https://doi.org/10.1145/3770855.3817747
+    type: conference
