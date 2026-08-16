@@ -192,6 +192,14 @@ header:not([data-big]) {
       flex-direction: column;
       width: 100%;
     }
+
+    .nav-dropdown {
+      text-align: right;
+    }
+
+    .nav-dropdown-menu {
+      text-align: left;
+    }
   }
 }
 
