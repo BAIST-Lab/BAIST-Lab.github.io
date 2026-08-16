@@ -4,7 +4,6 @@ nav:
   order: 3
   title: {zh: 团队成员, en: People}
   menu:
-    - {title: {zh: 全部成员, en: People}, anchor: people}
     - {title: {zh: 教师, en: Faculty}, anchor: faculty}
     - {title: {zh: 博士后, en: Postdocs}, anchor: postdocs}
     - {title: {zh: 博士生, en: Ph.D Students}, anchor: phd}
