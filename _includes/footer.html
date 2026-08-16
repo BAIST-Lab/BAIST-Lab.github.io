@@ -15,12 +15,16 @@
     </div>
   -->
 
-  <div>
-    {% for link in site.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key text="" link=value style="bare" %}
-    {% endfor %}
+  <div class="footer-contact">
+    <span>
+      <span class="lang-zh">邮箱：</span><span class="lang-en">Email: </span>
+      <a href="mailto:zhouxun2023@hit.edu.cn">zhouxun2023@hit.edu.cn</a>
+    </span>
+    <span>&nbsp;·&nbsp;</span>
+    <span>
+      <span class="lang-zh">地址：</span><span class="lang-en">Address: </span>
+      <span class="lang-zh">信息楼L1904</span><span class="lang-en">Building L1904</span>
+    </span>
   </div>
 
   <div class="footer-links">
