@@ -47,6 +47,10 @@
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
+    <a href="{{ "/" | relative_url | uri_escape }}">
+      <span class="lang-zh">首页</span><span class="lang-en">Home</span>
+    </a>
+
     {% assign pages = site.pages
       | where_exp: "page", "page.nav"
       | sort: "nav.order"
