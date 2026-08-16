@@ -132,6 +132,20 @@ items:
     date: 2026-04-30
     link: https://doi.org/10.1145/3770855.3817683
     type: conference
+  - title: "SecP-Tuning: Efficient Privacy-Preserving Prompt Tuning for Large
+      Language Models via MPC. In International Conference on Learning
+      Representations"
+    authors:
+      - Jinglong Luo
+      - Zhuo Zhang
+      - Yehong Zhang
+      - Shiyu LiuYe Dong
+      - Hui Wang
+      - Yue Yu
+      - Xun Zhou
+      - Zenglin Xu
+    publisher: ICLR 2026
+    date: 2026-03-01
   - id: doi:10.1145/3770855.3817747
     title: "HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal
       Prediction via Self-Partitional Mixture-of-Spatial-Experts"
@@ -146,3 +160,13 @@ items:
     date: 2026-04-30
     link: https://doi.org/10.1145/3770855.3817747
     type: conference
+  - title: "Map as a Prompt: Learning Multi-Modal Spatial-Signal Foundation Models
+      for Cross-scenario Wireless Localization"
+    authors:
+      - Yong ChU
+      - Xun Zhou
+      - Zenglin Xu
+      - Hui Wang
+      - Yue Yu
+    publisher: ICLR 2026
+    date: 2026-03-01
