@@ -3,11 +3,12 @@ name: {zh: 陶震, en: Zhen Tao}
 title: Zhen Tao
 image: images/team/taozhen.jpg
 role: phd
+email: "zhentao.tz@gmail.com"
 date: '2025-09-01'
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
 ---
-陶震，2025级博士生。
+我是2025级计算机科学专业在读博士生，2025年获南京大学硕士学位，研究方向为大语言模型（LLM）、机器学习（ML）与推荐系统。
 {: .lang-zh}
 
-Zhen Tao, PhD Student (Class of 2025).
+I am a Ph.D. student majoring in Computer Science (admitted in 2025). I received my Master’s degree from Nanjing University in 2025. My research interests lie in large language models (LLMs), machine learning (ML), and recommendation systems.
 {: .lang-en}

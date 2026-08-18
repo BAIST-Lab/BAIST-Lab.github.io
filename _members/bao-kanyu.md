@@ -3,11 +3,12 @@ name: {zh: 鲍侃宇, en: Kanyu Bao}
 title: Kanyu Bao
 image: images/team/baokanyu.jpg
 role: phd
+email: "23B936045@stu.hit.edu.cn"
 date: '2023-09-01'
 description: {zh: 2023级博士生, en: PhD Student (Class of 2023)}
 ---
-鲍侃宇，2023级博士生。
+本科来自于哈尔滨工业大学（深圳），研究方向为大模型MoE框架架构。
 {: .lang-zh}
 
-Kanyu Bao, PhD Student (Class of 2023).
+I received my bachelor’s degree from Harbin Institute of Technology (Shenzhen). My research focuses on large language model MoE framework architecture.
 {: .lang-en}
