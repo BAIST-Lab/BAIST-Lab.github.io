@@ -27,6 +27,7 @@ defaults:
       type: "members"
     values:
       layout: member
+      body_class: page-member
   # markdown files in /_posts
   - scope:
       type: "posts"
