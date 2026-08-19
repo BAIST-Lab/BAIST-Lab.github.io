@@ -1,11 +1,15 @@
 ---
-name: {zh: 张窅溥, en: Yaopu Zhang}
 title: Yaopu Zhang
-image: images/team/zhangyaopu.png
+name:
+  zh: 张窅溥
+  en: Yaopu Zhang
+image: images/team/zyp.jpg
+email: 24b951036@stu.hit.edu.cn
+date: 2024-09-01
 role: phd
-email: "24b951036@stu.hit.edu.cn"
-date: '2024-09-01'
-description: {zh: 2024级博士生, en: PhD Student (Class of 2024)}
+description:
+  zh: 2024级博士生
+  en: PhD Student (Class of 2024)
 ---
 时空大数据智能与计算实验室24级博士生。研究方向为时空图数据及其生成方法。
 {: .lang-zh}
