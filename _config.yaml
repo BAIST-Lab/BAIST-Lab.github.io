@@ -13,7 +13,9 @@ links:
   email: contact@your-lab.com
   github: MiSevenJoy
 
-### jekyll settings
+# jekyll settings
+# 允许生成未来日期（如 2026-09 入学）的成员/文档页面
+future: true
 
 # front matter defaults
 defaults:
