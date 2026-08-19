@@ -72,6 +72,7 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+  - docs
 
 # configure jekyll spaceship
 jekyll-spaceship:
