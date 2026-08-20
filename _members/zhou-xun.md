@@ -1,7 +1,7 @@
 ---
 title: Xun Zhou
 name:
-  zh: 周逊
+  zh: 周逊（团队负责人）
   en: Xun Zhou
 image: images/team/zhouxun.jpg
 email: zhouxun2023@hit.edu.cn
