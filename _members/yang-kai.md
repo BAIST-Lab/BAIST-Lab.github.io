@@ -16,6 +16,7 @@ homepage: https://bridgeyangk.github.io/
 {: .lang-zh}
 
 I am currently a PhD student at Harbin Institute of Technology (Shenzhen) (HITSZ), supervised by Prof. Xun Zhou. My research focuses on trustworthy AI and spatial-temporal data mining.
+{: .lang-en}
 
 Before that, I received my B.Eng. and M.Eng. degrees from the School of Information and Software Engineering, University of Electronic Science and Technology of China (UESTC) in 2022 and 2025, respectively.
 {: .lang-en}
