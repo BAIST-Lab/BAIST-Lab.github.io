@@ -19,7 +19,7 @@ nav:
 ## 代表成果
 {: .lang-zh}
 
-## Representative Work
+## Selected Publications
 {: .lang-en}
 
 <div class="featured-publication-grid">

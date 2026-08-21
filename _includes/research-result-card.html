@@ -11,5 +11,11 @@
     <h2 class="research-result-card-title lang-zh">{{ project.name.zh }}</h2>
     <h2 class="research-result-card-title lang-en">{{ project.name.en }}</h2>
     {% include project-meta.html project=project %}
+    {% if project.summary_text.zh %}
+    <p class="research-result-card-summary lang-zh">{{ project.summary_text.zh }}</p>
+    {% endif %}
+    {% if project.summary_text.en %}
+    <p class="research-result-card-summary lang-en">{{ project.summary_text.en }}</p>
+    {% endif %}
   </div>
 </a>
