@@ -1,7 +1,5 @@
-# 网站外观设置（可在后台「网站外观」中修改）
-# header_images 用于首页导航栏下方的轮播大图，可添加任意数量
 header_images:
   - image: images/lab_group.jpg
   - image: images/lab_group2.jpg
   - image: images/lab_group3.jpg
-footer: images/background.jpg
+footer: images/uploads/hitsz_1.jpg
