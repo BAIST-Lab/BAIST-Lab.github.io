@@ -3,7 +3,6 @@ name: {zh: 李飞羽, en: Feiyu Li}
 title: Feiyu Li
 image: images/team/lifeiyu.jpg
 role: phd
-email: "25b951142@stu.hit.edu.cn"
 date: '2025-09-01'
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
 ---

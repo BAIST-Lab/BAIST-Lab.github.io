@@ -3,7 +3,6 @@ name: {zh: 时旭, en: Xu Shi}
 title: Xu Shi
 image: images/team/shixu.jpg
 role: phd
-email: "shixu@stu.hit.edu.cn"
 date: '2025-09-01'
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
 ---

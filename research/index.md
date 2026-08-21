@@ -3,10 +3,10 @@ title: Publications
 body_class: page-research
 nav:
   order: 1
-  title: {zh: 研究成果, en: Publications}
+  title: {zh: 发表论著, en: Publications}
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}研究成果
+# {% include icon.html icon="fa-solid fa-microscope" %}发表论著
 {: .lang-zh}
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications

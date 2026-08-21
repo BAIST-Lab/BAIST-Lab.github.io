@@ -4,7 +4,6 @@ name:
   zh: 张忠义
   en: Zhongyi Zhang
 image: images/team/zhangzhongyi.jpg
-email: 25S151033@stu.hit.edu.cn
 date: 2025-09-01
 role: master
 description:

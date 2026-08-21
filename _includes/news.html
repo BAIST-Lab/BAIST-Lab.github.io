@@ -5,7 +5,10 @@
     <img class="news-image" src="{{ include.image | relative_url }}" alt="{{ include.title | xml_escape }}" loading="lazy">
     {% endif %}
     <div class="news-info">
-      <span class="news-title">{{ include.title }}</span>
+      <div class="news-info-header">
+        <span class="news-title">{{ include.title }}</span>
+        {% include news-type.html kind=include.news_type custom=include.news_type_custom %}
+      </div>
       <span class="news-date">{{ include.date | date: "%Y-%m-%d" }}</span>
     </div>
   </a>

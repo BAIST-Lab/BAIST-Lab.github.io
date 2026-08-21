@@ -4,7 +4,6 @@ name:
   zh: 王乐鸣
   en: Leming Wang
 image: images/team/wangleming.png
-email: 2917388029@qq.com
 date: 2026-09-01
 role: master
 description:

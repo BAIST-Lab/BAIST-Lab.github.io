@@ -1,0 +1,16 @@
+{% assign type_key = include.kind | default: "" %}
+{% assign preset = site.data.news_types[type_key] %}
+{% assign label_zh = preset.zh | default: "" | strip %}
+{% assign label_en = preset.en | default: "" | strip %}
+
+{% if type_key == "custom" %}
+  {% assign label_zh = include.custom.zh | default: "" | strip %}
+  {% assign label_en = include.custom.en | default: "" | strip %}
+{% endif %}
+
+{% if label_zh != "" or label_en != "" %}
+<span class="news-type" data-news-type="{{ type_key | default: 'custom' | xml_escape }}">
+  {% if label_zh != "" %}<span class="lang-zh">{{ label_zh }}</span>{% endif %}
+  {% if label_en != "" %}<span class="lang-en">{{ label_en }}</span>{% endif %}
+</span>
+{% endif %}

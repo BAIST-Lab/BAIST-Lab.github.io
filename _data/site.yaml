@@ -1,3 +1,4 @@
 # 网站外观设置（可在后台「网站外观」中修改）
+# header 仅用于首页导航栏下方的大图
 header: images/background.jpg
 footer: images/background.jpg

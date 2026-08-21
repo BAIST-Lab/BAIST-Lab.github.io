@@ -4,7 +4,6 @@ name:
   zh: 储勇
   en: Yong Chu
 image: images/team/chuyong.jpg
-email: chuyong@stu.hit.edu.cn
 date: 2023-09-01
 role: phd
 description:

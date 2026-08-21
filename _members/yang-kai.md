@@ -4,7 +4,6 @@ name:
   zh: 杨凯
   en: Kai Yang
 image: images/team/yangkai.jpg
-email: 25b951133@stu.hit.edu.cn
 date: 2025-09-01
 role: phd
 description:

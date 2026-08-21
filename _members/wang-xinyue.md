@@ -4,7 +4,6 @@ name:
   zh: 王欣悦
   en: Xinyue Wang
 image: images/team/wangxinyue.jpg
-email: 25b951063@stu.hit.edu.cn
 date: 2025-09-01
 role: phd
 description:

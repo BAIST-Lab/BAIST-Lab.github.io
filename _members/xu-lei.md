@@ -4,7 +4,6 @@ name:
   zh: 许磊
   en: Lei Xu
 image: images/team/xulei.jpg
-email: 26b351038@stu.hit.edu.cn
 date: 2026-09-01
 role: phd
 description:

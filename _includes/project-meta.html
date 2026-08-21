@@ -1,0 +1,14 @@
+{% assign project = include.project %}
+<div class="research-result-meta">
+  <span>
+    <span class="lang-zh">来源：{{ project.source }}</span>
+    <span class="lang-en">Source: {{ project.source_en }}</span>
+  </span>
+  <span>
+    <span class="lang-zh">周期：</span><span class="lang-en">Period: </span>{{ project.start_date | replace: "-", "." }}–{{ project.end_date | replace: "-", "." }}
+  </span>
+  <span>
+    <span class="lang-zh">角色：{{ project.role }}</span>
+    <span class="lang-en">Role: {{ project.role_en }}</span>
+  </span>
+</div>

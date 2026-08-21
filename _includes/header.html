@@ -1,4 +1,4 @@
-{% assign image = page.header | default: site.data.site.header | default: site.header %}
+{% assign hero_image = page.header | default: site.data.site.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
@@ -8,12 +8,8 @@
 
 <header
   class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
-  {% endif %}
-  {% if page.url == "/" %}
-    data-big
   {% endif %}
 >
   <a href="{{ "/" | relative_url }}" class="home">
@@ -98,3 +94,12 @@
     >EN</button>
   </nav>
 </header>
+
+{% if page.url == "/" and hero_image %}
+<div class="home-hero">
+  <img
+    src="{{ hero_image | relative_url | uri_escape }}"
+    alt="{{ site.title_en | default: site.title | xml_escape }}"
+  >
+</div>
+{% endif %}

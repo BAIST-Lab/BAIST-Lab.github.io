@@ -4,7 +4,6 @@ name:
   zh: 渠秀川
   en: Xiuchuan Qu
 image: images/team/quxiuchuan.png
-email: 25S151100@stu.hit.edu.cn
 date: 2025-09-01
 role: master
 description:

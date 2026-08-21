@@ -43,6 +43,12 @@
         </span>
       {% endif %}
 
+      {% for info in member.other_info %}
+        <span class="portrait-description">
+          {% include t.html value=info %}
+        </span>
+      {% endfor %}
+
       {% if member.email %}
         <span class="portrait-email">{{ member.email }}</span>
       {% endif %}

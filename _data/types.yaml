@@ -32,7 +32,7 @@ undergrad:
 
 graduate:
   icon: fa-solid fa-user-check
-  description: {zh: 毕业生, en: Graduate}
+  description: {zh: 已毕业成员, en: Graduate}
 
 mascot:
   icon: fa-solid fa-dog

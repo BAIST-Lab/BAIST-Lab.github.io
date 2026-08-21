@@ -2,6 +2,7 @@
 title: 我们的两篇工作被 KDD 2026 接收
 image: images/kdd.png
 date: 2026-08-11
+news_type: paper
 ---
 我们实验室的两篇论文被数据挖掘领域顶级会议 KDD 2026 接收。研究内容围绕时空数据挖掘与机器学习展开，具体论文信息将在正式发表后更新。
 {: .lang-zh}

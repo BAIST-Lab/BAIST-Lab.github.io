@@ -4,7 +4,6 @@ name:
   zh: 张窅溥
   en: Yaopu Zhang
 image: images/team/zyp.jpg
-email: 24b951036@stu.hit.edu.cn
 date: 2024-09-01
 role: phd
 description:

@@ -3,7 +3,6 @@ name: {zh: 鲍侃宇, en: Kanyu Bao}
 title: Kanyu Bao
 image: images/team/baokanyu.jpg
 role: phd
-email: "23B936045@stu.hit.edu.cn"
 date: '2023-09-01'
 description: {zh: 2023级博士生, en: PhD Student (Class of 2023)}
 ---

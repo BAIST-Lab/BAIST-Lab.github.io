@@ -3,7 +3,6 @@ name: {zh: 肖涵彬, en: Hanbin Xiao}
 title: Hanbin Xiao
 image: images/team/xiaohanbin.jpg
 role: master
-email: "24S051051@stu.hit.edu.cn"
 date: '2024-09-01'
 description: {zh: 2024级硕士生, en: Master Student (Class of 2024)}
 ---

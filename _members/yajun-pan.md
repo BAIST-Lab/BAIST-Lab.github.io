@@ -4,7 +4,6 @@ name:
   zh: 潘亚军
   en: Yajun Pan
 image: images/team/pyj.jpg
-email: 24S151148@stu.hit.edu.cn
 date: 2024-08-30
 role: master
 description:
