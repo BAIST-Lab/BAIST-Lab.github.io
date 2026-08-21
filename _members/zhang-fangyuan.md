@@ -12,6 +12,9 @@ description:
   en: Professor
   PhD Advisor: null
   National-level Young Talent: null
+other_info:
+  - zh: 国家级青年人才
+    en: NSFC National Young Talent
 homepage: https://homepage.hit.edu.cn/zhangfangyuan
 ---
 张芳源，哈尔滨工业大学（深圳）计算机科学与技术学院教授、博士生导师，国家级高层次青年人才。本科毕业于上海交通大学ACM试点班（致远荣誉计划），博士毕业于香港中文大学，此前在华为香港研究所担任研究员，并曾在微软亚洲研究院、腾讯、阿里云进行研究实习，长期致力于高效大数据管理与分析领域的研究，方向涵盖大数据计算的算法设计与分析、大数据挖掘，以及AI与数据管理（Data+AI）的融合技术。近年来在SIGMOD、VLDB、KDD、ICSE、TKDE等顶级会议和期刊上发表论文20余篇，多项研究成果已在知名互联网公司的核心产品中落地部署。张芳源教授担任SIGKDD、ICDE、WSDM、TKDE等多个CCF推荐A/B类会议和期刊的审稿人，并曾获评SIGKDD Outstanding Reviewer。此外，他也是香港青年科学家协会会员，曾担任香港中文大学（深圳）业界导师。
