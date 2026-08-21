@@ -9,6 +9,9 @@ role: phd
 description:
   zh: 2023级博士生
   en: PhD Student (Class of 2023)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 本科来自于哈尔滨工业大学（深圳），研究方向为大模型MoE框架架构。
 {: .lang-zh}
