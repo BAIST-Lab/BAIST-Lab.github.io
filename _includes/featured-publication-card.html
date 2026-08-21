@@ -1,0 +1,19 @@
+{% assign publication = include.publication %}
+<a class="featured-publication-card" href="{{ publication.url | relative_url | uri_escape }}">
+  <img
+    class="featured-publication-image"
+    src="{{ publication.image | relative_url | uri_escape }}"
+    alt="{{ publication.name.en | default: publication.name.zh | default: publication.title | xml_escape }}"
+    loading="lazy"
+    {% include fallback.html %}
+  >
+  <div class="featured-publication-content">
+    <h3 class="featured-publication-title lang-zh">{{ publication.name.zh }}</h3>
+    <h3 class="featured-publication-title lang-en">{{ publication.name.en }}</h3>
+    <span class="featured-publication-venue">
+      <span class="lang-zh">{{ publication.venue.zh }}</span><span class="lang-en">{{ publication.venue.en }}</span>
+    </span>
+    <p class="featured-publication-summary lang-zh">{{ publication.summary_text.zh }}</p>
+    <p class="featured-publication-summary lang-en">{{ publication.summary_text.en }}</p>
+  </div>
+</a>

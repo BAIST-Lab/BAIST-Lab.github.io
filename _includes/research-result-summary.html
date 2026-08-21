@@ -2,16 +2,19 @@
 {% assign details_zh = project.details.zh | default: "" | strip %}
 {% assign details_en = project.details.en | default: "" | strip %}
 <article class="research-result-summary">
-  <div class="research-result-summary-content">
-    <h3 class="lang-zh">{{ project.title }}</h3>
-    <h3 class="lang-en">{{ project.title_en }}</h3>
-    {% include project-meta.html project=project %}
-    <p class="lang-zh">{{ project.summary_text.zh }}</p>
-    <p class="lang-en">{{ project.summary_text.en }}</p>
-  </div>
   {% if details_zh != "" or details_en != "" %}
-  <a class="research-result-more" href="{{ project.url | relative_url | uri_escape }}">
-    <span class="lang-zh">查看详情</span><span class="lang-en">View details</span>
-  </a>
+    <a class="research-result-summary-title" href="{{ project.url | relative_url | uri_escape }}">
+      <span class="lang-zh">{{ project.name.zh }}</span><span class="lang-en">{{ project.name.en }}</span>
+    </a>
+  {% else %}
+    <span class="research-result-summary-title">
+      <span class="lang-zh">{{ project.name.zh }}</span><span class="lang-en">{{ project.name.en }}</span>
+    </span>
+  {% endif %}
+  <span class="lang-zh">。 </span><span class="lang-en">. </span>
+  {% include project-meta.html project=project %}
+  {% if project.summary_text.zh or project.summary_text.en %}
+    <span class="lang-zh">。{{ project.summary_text.zh }}</span>
+    <span class="lang-en">. {{ project.summary_text.en }}</span>
   {% endif %}
 </article>

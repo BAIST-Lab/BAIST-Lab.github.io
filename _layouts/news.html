@@ -8,7 +8,7 @@ layout: default
 
 <div class="news-detail-meta">
   <span class="news-detail-date">{{ page.date | date: "%Y-%m-%d" }}</span>
-  {% include news-type.html kind=page.news_type custom=page.news_type_custom %}
+  {% include news-type.html type=page.news_type %}
 </div>
 
 {% if page.image %}

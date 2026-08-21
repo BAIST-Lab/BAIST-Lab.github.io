@@ -1,0 +1,55 @@
+---
+layout: default
+body_class: page-featured-publication
+---
+
+{% include section.html %}
+
+<h1 class="lang-zh">{{ page.name.zh }}</h1>
+<h1 class="lang-en">{{ page.name.en }}</h1>
+
+<p class="featured-publication-detail-venue">
+  <span class="lang-zh">{{ page.venue.zh }}</span><span class="lang-en">{{ page.venue.en }}</span>
+</p>
+
+{% if page.image %}
+<div class="featured-publication-detail-image">
+  <img src="{{ page.image | relative_url | uri_escape }}" alt="{{ page.name.en | default: page.name.zh | default: page.title | xml_escape }}">
+</div>
+{% endif %}
+
+{% if page.link or page.code or page.data_link %}
+<div class="featured-publication-links">
+  {% if page.link %}
+  <a class="button" href="{{ page.link }}" target="_blank" rel="noopener noreferrer">
+    <span class="lang-zh">成果链接</span><span class="lang-en">Publication</span>
+  </a>
+  {% endif %}
+  {% if page.code %}
+  <a class="button" href="{{ page.code }}" target="_blank" rel="noopener noreferrer">
+    <span class="lang-zh">代码</span><span class="lang-en">Code</span>
+  </a>
+  {% endif %}
+  {% if page.data_link %}
+  <a class="button" href="{{ page.data_link }}" target="_blank" rel="noopener noreferrer">
+    <span class="lang-zh">数据</span><span class="lang-en">Data</span>
+  </a>
+  {% endif %}
+</div>
+{% endif %}
+
+{% include section.html %}
+
+<div class="featured-publication-detail lang-zh">
+  {{ page.details.zh | markdownify }}
+</div>
+
+<div class="featured-publication-detail lang-en">
+  {{ page.details.en | markdownify }}
+</div>
+
+<p class="center featured-publication-back">
+  <a href="{{ '/research/' | relative_url }}">
+    <span class="lang-zh">返回发表论著</span><span class="lang-en">Back to Publications</span>
+  </a>
+</p>

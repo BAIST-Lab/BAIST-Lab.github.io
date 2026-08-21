@@ -3,13 +3,13 @@
   <img
     class="research-result-card-image"
     src="{{ project.image | relative_url | uri_escape }}"
-    alt="{{ project.title_en | default: project.title | xml_escape }}"
+    alt="{{ project.name.en | default: project.name.zh | default: project.title | xml_escape }}"
     loading="lazy"
     {% include fallback.html %}
   >
   <div class="research-result-card-content">
-    <h2 class="research-result-card-title lang-zh">{{ project.title }}</h2>
-    <h2 class="research-result-card-title lang-en">{{ project.title_en }}</h2>
+    <h2 class="research-result-card-title lang-zh">{{ project.name.zh }}</h2>
+    <h2 class="research-result-card-title lang-en">{{ project.name.en }}</h2>
     {% include project-meta.html project=project %}
   </div>
 </a>

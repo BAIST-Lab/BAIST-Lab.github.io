@@ -22,5 +22,5 @@ The lab conducts research in data mining, machine learning, spatiotemporal big d
 {: .lang-en .center}
 
 {% for post in site.posts %}
-{% include news.html url=post.url title=post.title image=post.image date=post.date news_type=post.news_type news_type_custom=post.news_type_custom %}
+{% include news.html url=post.url title=post.title image=post.image date=post.date news_type=post.news_type summary=post.summary_text %}
 {% endfor %}

@@ -5,14 +5,14 @@ body_class: page-project
 
 {% include section.html %}
 
-<h1 class="lang-zh">{{ page.title }}</h1>
-<h1 class="lang-en">{{ page.title_en }}</h1>
+<h1 class="lang-zh">{{ page.name.zh }}</h1>
+<h1 class="lang-en">{{ page.name.en }}</h1>
 
 {% include project-meta.html project=page %}
 
 {% if page.image %}
 <div class="research-result-detail-image">
-  <img src="{{ page.image | relative_url | uri_escape }}" alt="{{ page.title_en | default: page.title | xml_escape }}">
+  <img src="{{ page.image | relative_url | uri_escape }}" alt="{{ page.name.en | default: page.name.zh | default: page.title | xml_escape }}">
 </div>
 {% endif %}
 

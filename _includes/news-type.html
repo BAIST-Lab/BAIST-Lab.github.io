@@ -1,11 +1,12 @@
-{% assign type_key = include.kind | default: "" %}
+{% assign type_key = include.type.preset | default: include.type | default: "" %}
+{% assign custom_type = include.type.custom | default: include.custom %}
 {% assign preset = site.data.news_types[type_key] %}
 {% assign label_zh = preset.zh | default: "" | strip %}
 {% assign label_en = preset.en | default: "" | strip %}
 
 {% if type_key == "custom" %}
-  {% assign label_zh = include.custom.zh | default: "" | strip %}
-  {% assign label_en = include.custom.en | default: "" | strip %}
+  {% assign label_zh = custom_type.zh | default: "" | strip %}
+  {% assign label_en = custom_type.en | default: "" | strip %}
 {% endif %}
 
 {% if label_zh != "" or label_en != "" %}

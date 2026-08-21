@@ -14,6 +14,23 @@ nav:
 
 {% include section.html %}
 
+{% assign featured_publications = site.featured_publications %}
+{% if featured_publications.size > 0 %}
+## 代表成果
+{: .lang-zh}
+
+## Representative Work
+{: .lang-en}
+
+<div class="featured-publication-grid">
+  {% for publication in featured_publications %}
+    {% include featured-publication-card.html publication=publication %}
+  {% endfor %}
+</div>
+
+{% include section.html %}
+{% endif %}
+
 {% include search-box.html %}
 
 {% include search-info.html %}

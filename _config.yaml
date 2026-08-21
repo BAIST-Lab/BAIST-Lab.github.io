@@ -41,6 +41,12 @@ defaults:
     values:
       layout: project
       body_class: page-project
+  # markdown files in /_featured_publications
+  - scope:
+      type: "featured_publications"
+    values:
+      layout: featured-publication
+      body_class: page-featured-publication
 
 collections:
   # generate page for each member
@@ -53,6 +59,10 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  # generate page for each featured publication
+  featured_publications:
+    output: true
+    permalink: /research/featured/:name/
 
 # jekyll plugins
 plugins:

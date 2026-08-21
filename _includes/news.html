@@ -7,8 +7,11 @@
     <div class="news-info">
       <div class="news-info-header">
         <span class="news-title">{{ include.title }}</span>
-        {% include news-type.html kind=include.news_type custom=include.news_type_custom %}
+        {% include news-type.html type=include.news_type %}
       </div>
+      {% if include.summary %}
+      <p class="news-summary">{% include t.html value=include.summary %}</p>
+      {% endif %}
       <span class="news-date">{{ include.date | date: "%Y-%m-%d" }}</span>
     </div>
   </a>
