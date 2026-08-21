@@ -4,8 +4,8 @@
 // 成员详情页：照片与文字左右两列布局
 body.page-member section[data-size="page"] {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
   align-items: start;
 }
 
