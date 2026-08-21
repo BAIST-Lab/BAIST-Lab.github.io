@@ -1,10 +1,14 @@
 ---
-name: {zh: 董钊涵, en: Zhaohan Dong}
 title: Zhaohan Dong
-image: images/team/dongzhaohan.jpeg
+name:
+  zh: 董钊涵
+  en: Zhaohan Dong
+image: images/team/dongzhaohan.jpg
+date: 2026-09-01
 role: phd
-date: '2026-09-01'
-description: {zh: 2026级博士生, en: PhD Student (Class of 2026)}
+description:
+  zh: 2026级博士生
+  en: PhD Student (Class of 2026)
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
