@@ -1,4 +1,5 @@
-{% assign hero_image = page.header | default: site.data.site.header | default: site.header %}
+{% assign hero_images = site.data.site.header_images %}
+{% assign legacy_hero_image = page.header | default: site.data.site.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
@@ -8,7 +9,7 @@
 
 <header
   class="background"
-  style="--image: url('{{ 'images/gallery/photo4.jpg' | relative_url | uri_escape }}')"
+  style="--image: url('{{ 'images/gallery/bg3.png' | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -96,11 +97,41 @@
   </nav>
 </header>
 
-{% if page.url == "/" and hero_image %}
+{% if page.url == "/" %}
+  {% if hero_images and hero_images.size > 0 %}
+<div
+  class="home-hero home-carousel"
+  data-carousel
+  data-interval="5000"
+  role="region"
+  aria-roledescription="carousel"
+  aria-label="Homepage images"
+  tabindex="0"
+>
+  <div class="home-carousel-track" data-carousel-track>
+    {% for item in hero_images %}
+      {% assign image_path = item.image | default: item %}
+    <img
+      class="home-hero-slide"
+      data-carousel-slide
+      src="{{ image_path | relative_url | uri_escape }}"
+      alt="{{ site.title_en | default: site.title | append: ' - ' | append: forloop.index | xml_escape }}"
+      {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %}
+      aria-label="{{ forloop.index }} / {{ forloop.length }}"
+    >
+    {% endfor %}
+  </div>
+  {% if hero_images.size > 1 %}
+  <button class="home-carousel-control home-carousel-prev" type="button" data-carousel-prev aria-label="Previous image">‹</button>
+  <button class="home-carousel-control home-carousel-next" type="button" data-carousel-next aria-label="Next image">›</button>
+  {% endif %}
+</div>
+  {% elsif legacy_hero_image %}
 <div class="home-hero">
   <img
-    src="{{ hero_image | relative_url | uri_escape }}"
+    src="{{ legacy_hero_image | relative_url | uri_escape }}"
     alt="{{ site.title_en | default: site.title | xml_escape }}"
   >
 </div>
+  {% endif %}
 {% endif %}
