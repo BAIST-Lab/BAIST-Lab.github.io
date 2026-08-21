@@ -5,6 +5,9 @@ image: images/team/huangrui.jpg
 role: phd
 date: '2024-09-01'
 description: {zh: 2024级博士生, en: PhD Student (Class of 2024)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 本科毕业于哈尔滨工业大学（威海），硕士毕业于北京师范大学，目前主要进行非参贝叶斯、概率图模型、时间序列生成预测等相关内容的研究。
 {: .lang-zh}

@@ -5,6 +5,9 @@ image: images/team/wangjiaze.jpg
 role: phd
 date: '2024-09-01'
 description: {zh: 2024级博士生, en: PhD Student (Class of 2024)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 王嘉泽分别于2021年和2024年获得西北工业大学软件学院软件工程学士和硕士学位。目前，他正在哈尔滨工业大学计算机科学与技术学院攻读博士学位。他的研究方向包括时空点云处理和多模态学习。
 {: .lang-zh}

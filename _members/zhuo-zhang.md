@@ -3,7 +3,7 @@ title: Zhuo Zhang
 name:
   zh: 张卓
   en: Zhuo Zhang
-image: images/team/zhangzhuo.jpg
+image: images/team/zhangzhuo.png
 date: 2021-09-01
 role: graduate
 description:

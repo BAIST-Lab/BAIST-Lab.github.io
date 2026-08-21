@@ -9,6 +9,9 @@ role: phd
 description:
   zh: 2026级博士生
   en: PhD Student (Class of 2026)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 homepage: https://senhaoc.github.io/
 ---
 我是哈尔滨工业大学（深圳）博士生，师从张芳源教授。我本科毕业于浙江大学自动化专业，随后在密歇根大学安娜堡分校获得电子与计算机工程硕士学位。

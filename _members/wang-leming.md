@@ -9,6 +9,9 @@ role: master
 description:
   zh: 2026级硕士生
   en: Master Student (Class of 2026)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 我是王乐鸣，本科毕业于哈尔滨工业大学深圳校区计算机学院，目前正在跟随老师学习图处理系统的相关知识。我对于系统方向的工作具有较高的兴趣，希望能够尽快补足知识短板，跟上课题组的科研步伐。
 {: .lang-zh}

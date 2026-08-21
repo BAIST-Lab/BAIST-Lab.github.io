@@ -5,6 +5,9 @@ image: images/team/zhengpeijun.jpg
 role: phd
 date: '2026-09-01'
 description: {zh: 2026级博士生, en: PhD Student (Class of 2026)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 郑沛钧，哈尔滨工业大学（深圳）计算机科学与技术学院博士研究生。本科毕业于哈尔滨工业大学（深圳），硕士毕业于香港城市大学。目前主要从事多模态推荐系统、生成式推荐与智能多媒体分析相关研究。研究兴趣包括多模态序列推荐、大语言模型驱动的推荐系统、视觉语义建模，以及面向大规模视频数据的高效目标轨迹查询与分析。
 {: .lang-zh}

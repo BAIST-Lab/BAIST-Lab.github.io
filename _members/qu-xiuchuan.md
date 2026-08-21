@@ -9,6 +9,9 @@ role: master
 description:
   zh: 2025级硕士生
   en: Master Student (Class of 2025)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 渠秀川，2025级硕士生。
 {: .lang-zh}

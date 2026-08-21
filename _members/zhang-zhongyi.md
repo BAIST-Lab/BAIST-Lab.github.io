@@ -9,6 +9,9 @@ role: master
 description:
   zh: 2025级硕士生
   en: Master Student (Class of 2025)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 我本科就读于华南理工大学计算机科学与技术专业，现于哈尔滨工业大学（深圳）计算机科学与技术学院攻读硕士研究生。
 {: .lang-zh}

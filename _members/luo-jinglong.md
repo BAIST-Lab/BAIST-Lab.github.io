@@ -5,6 +5,9 @@ image: images/team/luojinglong.jpg
 role: graduate
 date: '2022-09-01'
 description: {zh: 2022级博士毕业生, en: PhD Graduate (Class of 2022)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 罗景龙，2022级博士生。
 {: .lang-zh}

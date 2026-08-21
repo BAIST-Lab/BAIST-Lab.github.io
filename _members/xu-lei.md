@@ -9,6 +9,9 @@ role: phd
 description:
   zh: 2026级博士生
   en: PhD Student (Class of 2026)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 时空大数据智能与计算实验室26级博士生，本科及硕士毕业于中山大学。研究兴趣包括时空图数据及其生成、Persona Agents等。
 {: .lang-zh}

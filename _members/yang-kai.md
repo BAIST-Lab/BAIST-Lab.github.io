@@ -9,6 +9,9 @@ role: phd
 description:
   zh: 2025级博士生
   en: PhD Student (Class of 2025)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 homepage: https://bridgeyangk.github.io/
 ---
 杨凯，2025级博士生。分别于2022年和2025年获得电子科技大学软件学院软件工程学士和硕士学位，目前正在哈尔滨工业大学（深圳）计算机科学与技术学院攻读博士学位。主要研究方向包括可信人工智能和时空数据挖掘等，重点关注时空推荐系统的准确性、可解释性与鲁棒性等问题。相关研究成果发表于SIGIR、ACM MM、AAAI、ICASSP等国际学术会议。

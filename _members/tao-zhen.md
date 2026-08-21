@@ -5,6 +5,9 @@ image: images/team/taozhen.jpg
 role: phd
 date: '2025-09-01'
 description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 我是2025级计算机科学专业在读博士生，2025年获南京大学硕士学位，研究方向为大语言模型（LLM）、机器学习（ML）与推荐系统。
 {: .lang-zh}

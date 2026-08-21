@@ -5,6 +5,9 @@ image: images/team/liubinhui.jpg
 role: master
 date: '2026-09-01'
 description: {zh: 2026级硕士生, en: Master Student (Class of 2026)}
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 本科毕业于哈尔滨工业大学（深圳），现于哈尔滨工业大学（深圳）攻读硕士研究生。
 {: .lang-zh}

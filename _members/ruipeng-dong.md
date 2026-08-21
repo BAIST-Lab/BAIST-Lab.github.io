@@ -9,6 +9,9 @@ role: phd
 description:
   zh: 2026级博士生
   en: PhD Student (Class of 2026)
+other_info:
+  - zh: 导师：周逊教授
+    en: "Advisor: Prof. Xun Zhou"
 ---
 董芮朋，2026级计算机科学专业博士研究生，本科及硕士毕业于中南大学。研究方向为文本属性图表示学习、检索增强生成与智能体系统。
 {: .lang-zh}
