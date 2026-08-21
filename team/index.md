@@ -1,5 +1,6 @@
 ---
 title: Team
+body_class: page-top-level
 nav:
   order: 3
   title: {zh: 团队成员, en: People}

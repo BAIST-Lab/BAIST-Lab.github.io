@@ -1,5 +1,6 @@
 ---
 title: Join Us
+body_class: page-top-level
 nav:
   order: 5
   title: {zh: 加入我们, en: Join Us}
@@ -10,6 +11,8 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-chalkboard-user" %}Join Us
 {: .lang-en}
+
+{% include section.html %}
 
 “时空大数据智能与计算实验室”经费充足，聚焦前沿，科研思路兼顾高水平论文发表与实际应用价值。欢迎对数据挖掘、人工智能，尤其是时空大数据分析挖掘感兴趣的同学加盟我组。
 {: .lang-zh}

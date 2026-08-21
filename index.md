@@ -1,4 +1,5 @@
 ---
+body_class: page-top-level
 ---
 
 # 时空大数据智能与计算实验室
@@ -7,10 +8,12 @@
 # Spatiotemporal Big Data Intelligence and Computing Lab
 {: .lang-en}
 
-实验室研究方向涵盖数据挖掘、机器学习、时空大数据分析与智能、智慧城市等，重点包括时空数据深度学习、时空大模型与基础预训练模型、图数据挖掘、时空数据生成式学习、强化学习及模仿学习、可解释机器学习技术、多模态时空智能与具身智能；研究成果广泛应用于智慧城市与智慧交通、低空经济、共享经济与城市物流、公共安全、自然环境监测保护与可持续发展、智慧能源与电力系统智能等领域。
+{% include section.html %}
+
+实验室以数据驱动的智能与计算为核心，面向复杂、异构、多模态大数据，围绕人工智能、机器学习、数据分析与挖掘、数据管理等技术及其在垂直领域中的应用开展研究。当前重点方向包括：通用与领域大数据智能体系统、AI4S与科学智能体、时空数据挖掘与时间序列分析、可解释机器学习与推理、强化学习与模仿学习、多模态时空智能与具身智能、AI计算基座（AI Infra）等。研究成果广泛应用于智慧城市与智慧交通、低空经济、共享经济与城市物流、公共安全、环境保护、智慧能源与电力系统智能等领域。
 {: .lang-zh}
 
-The lab conducts research in data mining, machine learning, spatiotemporal big data analytics and intelligence, and smart cities, with a focus on deep learning for spatiotemporal data, large spatiotemporal models and foundation models, graph mining, generative learning for spatiotemporal data, reinforcement and imitation learning, explainable machine learning, and multimodal spatiotemporal intelligence and embodied AI. Its work finds applications across smart cities and transportation, the low-altitude economy, the sharing economy and urban logistics, public safety, environmental monitoring and sustainability, and smart energy and power systems.
+The lab centers on data-driven intelligence and computing, conducting research on artificial intelligence, machine learning, data analytics and mining, data management, and their applications in vertical domains for complex, heterogeneous, and multimodal big data. Current focus areas include general-purpose and domain-specific big-data agent systems, AI for Science (AI4S) and scientific agents, spatiotemporal data mining and time-series analysis, explainable machine learning and reasoning, reinforcement learning and imitation learning, multimodal spatiotemporal intelligence and embodied AI, and AI infrastructure (AI Infra). Its research outcomes are widely applied to smart cities and intelligent transportation, the low-altitude economy, the sharing economy and urban logistics, public safety, environmental protection, smart energy, and intelligent power systems.
 {: .lang-en}
 
 {% include section.html %}

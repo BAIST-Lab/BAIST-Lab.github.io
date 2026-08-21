@@ -1,5 +1,6 @@
 ---
 title: Gallery
+body_class: page-top-level
 nav:
   order: 4
   title: {zh: 相册, en: Gallery}
@@ -10,6 +11,8 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-images" %}Gallery
 {: .lang-en}
+
+{% include section.html %}
 
 实验室科研活动与生活瞬间，点击图片可放大查看。
 {: .lang-zh}

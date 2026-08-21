@@ -1,6 +1,6 @@
 ---
 title: Publications
-body_class: page-research
+body_class: page-research page-top-level
 nav:
   order: 1
   title: {zh: 发表论著, en: Publications}
@@ -16,7 +16,7 @@ nav:
 
 {% assign featured_publications = site.featured_publications %}
 {% if featured_publications.size > 0 %}
-## 代表成果
+## 代表工作
 {: .lang-zh}
 
 ## Selected Publications

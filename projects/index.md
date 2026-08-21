@@ -1,6 +1,6 @@
 ---
 title: Research Achievements
-body_class: page-projects
+body_class: page-projects page-top-level
 nav:
   order: 2
   title: {zh: 研究成果, en: Research Achievements}
