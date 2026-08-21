@@ -4,27 +4,27 @@ body_class: page-member
 ---
 
 <div class="member-profile">
-  <div class="member-profile-sidebar">
+  <div class="member-profile-card">
     {% include portrait.html lookup=page.slug %}
-
-    {% if page.homepage or page.links %}
-    <div class="member-profile-actions">
-      {% if page.homepage %}
-        {% include button.html type="home-page" link=page.homepage style="bare" %}
-      {% endif %}
-      {% for link in page.links %}
-        {% assign key = link[0] %}
-        {% assign value = link[1] %}
-        {% include button.html type=key link=value style="bare" %}
-      {% endfor %}
-    </div>
-    {% endif %}
   </div>
 
   <div class="member-profile-introduction">
     {{ content }}
   </div>
 </div>
+
+{% if page.homepage or page.links %}
+<div class="member-profile-actions">
+  {% if page.homepage %}
+    {% include button.html type="home-page" link=page.homepage style="bare" %}
+  {% endif %}
+  {% for link in page.links %}
+    {% assign key = link[0] %}
+    {% assign value = link[1] %}
+    {% include button.html type=key link=value style="bare" %}
+  {% endfor %}
+</div>
+{% endif %}
 
 {% assign member_name = page.name.en | default: page.name %}
 
