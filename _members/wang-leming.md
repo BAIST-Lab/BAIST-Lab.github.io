@@ -3,7 +3,7 @@ title: Leming Wang
 name:
   zh: 王乐鸣
   en: Leming Wang
-image: images/team/wangleming.png
+image: images/team/wangleming.jpg
 date: 2026-09-01
 role: master
 description:
