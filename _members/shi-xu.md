@@ -1,10 +1,14 @@
 ---
-name: {zh: 时旭, en: Xu Shi}
 title: Xu Shi
+name:
+  zh: 时旭
+  en: Xu Shi
 image: images/team/shixu.jpg
+date: 2025-09-01
 role: phd
-date: '2025-09-01'
-description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
+description:
+  zh: 2025级博士生
+  en: PhD Student (Class of 2025)
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
