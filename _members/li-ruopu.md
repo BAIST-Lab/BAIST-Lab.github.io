@@ -1,10 +1,14 @@
 ---
-name: {zh: 李若朴, en: Ruopu Li}
 title: Ruopu Li
+name:
+  zh: 李若朴
+  en: Ruopu Li
 image: images/team/liruopu.jpg
+date: 2024-09-01
 role: master
-date: '2024-09-01'
-description: {zh: 2024级硕士生, en: Master Student (Class of 2024)}
+description:
+  zh: 2024级硕士生
+  en: Master Student (Class of 2024)
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
