@@ -1,10 +1,14 @@
 ---
-name: {zh: 郑沛钧, en: Peijun Zheng}
 title: Peijun Zheng
-image: images/team/zhengpeijun.jpg
+name:
+  zh: 郑沛钧
+  en: Peijun Zheng
+image: images/team/zhenpeijun2.jpg
+date: 2026-09-01
 role: phd
-date: '2026-09-01'
-description: {zh: 2026级博士生, en: PhD Student (Class of 2026)}
+description:
+  zh: 2026级博士生
+  en: PhD Student (Class of 2026)
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
