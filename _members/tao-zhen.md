@@ -1,10 +1,14 @@
 ---
-name: {zh: 陶震, en: Zhen Tao}
 title: Zhen Tao
+name:
+  zh: 陶震
+  en: Zhen Tao
 image: images/team/taozhen.jpg
+date: 2025-09-01
 role: phd
-date: '2025-09-01'
-description: {zh: 2025级博士生, en: PhD Student (Class of 2025)}
+description:
+  zh: 2025级博士生
+  en: PhD Student (Class of 2025)
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
