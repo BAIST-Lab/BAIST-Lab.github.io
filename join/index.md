@@ -34,8 +34,15 @@ The lab is well funded and focuses on frontier research, with a research agenda 
 {% unless forloop.last %}{% include section.html %}{% endunless %}
 {% endfor %}
 
-请发送简历及相关材料至：**zhouxun2023@hit.edu.cn**
-{: .lang-zh}
-
-Please send your CV and relevant materials to: **zhouxun2023@hit.edu.cn**
-{: .lang-en}
+<div class="join-contact">
+  <p class="lang-zh">
+    有兴趣加入团队的申请人，请发送简历及相关材料给团队老师：<br>
+    <a href="mailto:zhouxun2023@hit.edu.cn">zhouxun2023@hit.edu.cn</a><br>
+    <a href="mailto:zhangfangyuan@hit.edu.cn">zhangfangyuan@hit.edu.cn</a>
+  </p>
+  <p class="lang-en">
+    Applicants interested in joining the team are welcome to send their CV and relevant materials to the faculty members:<br>
+    <a href="mailto:zhouxun2023@hit.edu.cn">zhouxun2023@hit.edu.cn</a><br>
+    <a href="mailto:zhangfangyuan@hit.edu.cn">zhangfangyuan@hit.edu.cn</a>
+  </p>
+</div>
