@@ -14,31 +14,59 @@ nav:
 
 {% include section.html %}
 
-{% assign results = site.projects | sort: "start_date" | reverse %}
-{% assign card_count = 0 %}
-{% for result in results %}
-  {% assign details_zh = result.details.zh | default: "" | strip %}
-  {% assign details_en = result.details.en | default: "" | strip %}
-  {% if details_zh != "" or details_en != "" %}
-    {% assign card_count = card_count | plus: 1 %}
-  {% endif %}
+{% assign featured_publications = site.featured_publications %}
+{% if featured_publications.size > 0 %}
+## 代表工作
+{: .lang-zh}
+
+## Selected Publications
+{: .lang-en}
+
+{% assign featured_categories = site.featured_categories | sort: "order" %}
+{% for category in featured_categories %}
+{% assign category_works = featured_publications | where: "category", category.title %}
+{% if category_works.size > 0 %}
+<section class="featured-publication-category">
+  <h3 class="featured-publication-category-title">
+    <span class="lang-zh">{{ category.name.zh }}</span><span class="lang-en">{{ category.name.en }}</span>
+  </h3>
+  <div class="featured-publication-grid">
+    {% for publication in category_works %}
+      {% include featured-publication-card.html publication=publication %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endfor %}
 
-{% if results.size > 0 %}
-{% if card_count > 0 %}
-<div class="research-result-grid">
-  {% for result in results %}
-    {% assign details_zh = result.details.zh | default: "" | strip %}
-    {% assign details_en = result.details.en | default: "" | strip %}
-    {% if details_zh != "" or details_en != "" %}
-    {% include research-result-card.html project=result %}
-    {% endif %}
-  {% endfor %}
-</div>
+{% assign uncategorized_count = 0 %}
+{% for publication in featured_publications %}
+  {% assign matched_categories = featured_categories | where: "title", publication.category %}
+  {% if matched_categories.size == 0 %}
+    {% assign uncategorized_count = uncategorized_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% if uncategorized_count > 0 %}
+<section class="featured-publication-category">
+  <h3 class="featured-publication-category-title">
+    <span class="lang-zh">未分类</span><span class="lang-en">Uncategorized</span>
+  </h3>
+  <div class="featured-publication-grid">
+    {% for publication in featured_publications %}
+      {% assign matched_categories = featured_categories | where: "title", publication.category %}
+      {% if matched_categories.size == 0 %}
+      {% include featured-publication-card.html publication=publication %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 {% include section.html %}
 {% endif %}
 
+{% assign results = site.projects | sort: "start_date" | reverse %}
+{% if results.size > 0 %}
 ## 研究课题
 {: .lang-zh}
 

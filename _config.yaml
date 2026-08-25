@@ -59,10 +59,13 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  # categories used to group featured works on the research achievements page
+  featured_categories:
+    output: false
   # generate page for each featured publication
   featured_publications:
     output: true
-    permalink: /research/featured/:name/
+    permalink: /projects/featured/:name/
 
 # jekyll plugins
 plugins:
