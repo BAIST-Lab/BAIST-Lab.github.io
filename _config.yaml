@@ -59,7 +59,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
-  # categories used to group featured works on the research achievements page
+  # categories used to group featured works on the research outcomes page
   featured_categories:
     output: false
   # generate page for each featured publication

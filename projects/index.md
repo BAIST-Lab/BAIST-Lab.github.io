@@ -1,15 +1,15 @@
 ---
-title: Research Achievements
+title: Research Outcomes
 body_class: page-projects page-top-level
 nav:
   order: 2
-  title: {zh: 研究成果, en: Research Achievements}
+  title: {zh: 研究成果, en: Research Outcomes}
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}研究成果
 {: .lang-zh}
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Research Achievements
+# {% include icon.html icon="fa-solid fa-wrench" %}Research Outcomes
 {: .lang-en}
 
 {% include section.html %}
@@ -83,5 +83,5 @@ nav:
 </div>
 {% else %}
 <p class="lang-zh center">暂无研究成果。</p>
-<p class="lang-en center">No research achievements are available yet.</p>
+<p class="lang-en center">No research outcomes are available yet.</p>
 {% endif %}
