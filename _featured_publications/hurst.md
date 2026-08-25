@@ -4,7 +4,7 @@ category: spatiotemporal-foundation-models
 redirect_from:
   - /research/featured/hurst/
 name:
-  zh: HURST：面向时空预测的异质性自适应城市基础模型
+  zh: "HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal Prediction"
   en: "HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal
     Prediction"
 venue:

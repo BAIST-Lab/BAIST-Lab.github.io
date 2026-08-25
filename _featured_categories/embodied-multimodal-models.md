@@ -1,7 +1,7 @@
 ---
 title: embodied-multimodal-models
 name:
-  zh: 具身智能与多模态大模型
-  en: Embodied Intelligence and Multimodal Large Models
+  zh: 多模态时空智能与具身智能
+  en: Multimodal Spatiotemporal Intelligence and Embodied Intelligence
 order: 2
 ---

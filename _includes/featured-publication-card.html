@@ -1,6 +1,7 @@
 {% assign publication = include.publication %}
 <article class="featured-publication-card featured-publication-card-has-links">
   <a class="featured-publication-card-main" href="{{ publication.url | relative_url | uri_escape }}">
+    {% if publication.image %}
     <img
       class="featured-publication-image"
       src="{{ publication.image | relative_url | uri_escape }}"
@@ -8,6 +9,11 @@
       loading="lazy"
       {% include fallback.html %}
     >
+    {% else %}
+    <div class="featured-publication-image featured-publication-image-placeholder" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-file-lines" %}
+    </div>
+    {% endif %}
     <div class="featured-publication-content">
       <h3 class="featured-publication-title lang-zh">{{ publication.name.zh }}</h3>
       <h3 class="featured-publication-title lang-en">{{ publication.name.en }}</h3>
