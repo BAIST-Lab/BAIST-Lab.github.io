@@ -19,7 +19,7 @@ nav:
 ## 代表工作
 {: .lang-zh}
 
-## Selected Publications
+## Featured Works
 {: .lang-en}
 
 {% assign featured_categories = site.featured_categories | sort: "order" %}
