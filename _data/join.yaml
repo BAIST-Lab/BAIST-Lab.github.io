@@ -1,54 +1,125 @@
-# 招生招聘信息（后台「招生招聘」栏目可编辑）
 sections:
-  - title: {zh: 博士后、科研助理, en: Postdoc and Research Assistant}
+  - title:
+      zh: 博士后、科研助理
+      en: Postdoc and Research Assistant
+    content:
+      zh: >-
+        招收博士后研究员，研究方向包括大模型与智能体、AI4Science、数据挖掘与机器学习、大数据计算等方向。待遇优厚，提供海外合作和访问机会，常年有效。
+
+
+        具体政策见：https://www.hitsz.edu.cn/job/view/44.html
+
+
+        同时招聘1名合同制科研助理（专职/兼职均可），要求理工科背景，硕士及以上学历，具有科研项目管理与材料撰写经验，待遇从优。
+      en: >-
+        **Postdoctoral Researchers**
+
+
+        We are recruiting postdoctoral researchers in areas including Large Language Models (LLMs) and AI Agents, AI for Science (AI4Science), Data Mining and Machine Learning, and Big Data Computing. We offer competitive compensation, as well as opportunities for international collaboration and research visits. Applications are accepted on a rolling basis.
+
+
+        For detailed policies, please refer to:
+
+        https://www.hitsz.edu.cn/job/view/44.html
+
+
+        **Research Assistant**
+
+
+        We are also recruiting one contract-based Research Assistant (full-time or part-time). Applicants should have a background in science or engineering, hold a Master’s degree or above, and have experience in research project management and proposal/document preparation. Competitive compensation will be provided.
+  - title:
+      zh: 博士生
+      en: PhD Students
     content:
       zh: |-
-        招收博士后研究员 1–2 名，研究方向包括数据挖掘、机器学习、大数据计算与人工智能等方向。待遇优厚，提供海外合作和访问机会，常年有效。
-
-        具体政策见：[https://www.hitsz.edu.cn/job/view/44.html](https://www.hitsz.edu.cn/job/view/44.html)
-
-        同时招聘 1 名合同制科研助理（专职 / 兼职均可），要求理工科背景，硕士及以上学历，具有科研项目管理与材料撰写经验。
-      en: |-
-        We are recruiting 1–2 postdoctoral researchers in data mining, machine learning, big data computing, and artificial intelligence. Competitive salary, overseas collaboration and visiting opportunities are available. Open year-round.
-
-        Policy details: [https://www.hitsz.edu.cn/job/view/44.html](https://www.hitsz.edu.cn/job/view/44.html)
-
-        We also recruit 1 contract research assistant (full-time or part-time), with a background in science/engineering, a master's degree or above, and experience in research project management and proposal writing.
-  - title: {zh: 博士生, en: PhD Students}
-    content:
-      zh: |-
-        每年招收博士研究生 2–4 名。要求对科研有兴趣、有主动性，编程与数学基础扎实，有相关研究经验者优先。
+        每年预计招收博士研究生4-6名。要求对科研有兴趣、有主动性，编程与数学基础扎实，有相关研究经验者优先。
 
         **博士申请方式：**
 
         - 本科直博生：7 月推免夏令营，或 8–9 月推免考核。
         - 申请-考核制：8–10 月秋季招生 / 次年 3–4 月春季招生。
-        - 已获硕士学位者：可申请学校快响计划。
+        - 已获硕士学位者或3月内硕士毕业：可申请学校快响计划。
 
-        **可申请博士培养项目：**
+        **可申请博士培养项目类型：**
 
-        - 哈尔滨工业大学统招博士
-        - 哈工大–鹏城实验室联合培养博士
-        - 哈工大–大湾区大学（东莞）联合培养博士
-      en: |-
-        We recruit 2–4 PhD students each year. Applicants should be interested and proactive in research, with solid programming and math foundations; relevant research experience is preferred.
+        - 哈尔滨工业大学统招博士（学术类、专业类）
+        - 哈工大–鹏城实验室联合培养博士（学术类、专业类）
+        - 其他特殊类型或联合培养项目（具体见通知）
+        - 另外，每年可推荐、指导深圳河套学院博士生若干名，在河套学院培养，发哈工大毕业证学位证，需参加河套学院单独考核。
 
-        **Application methods:**
+        <div style="color: #d32f2f;" markdown="1">
+        **[正在招生]**
+        目前有2027级多个博士名额，包括鹏城实验室联培1名、哈工大统招＋课题急需特招博士2-4名，河套学院联合培养博士2-3名，请提前与意向导师联系。
+        <div style="color: #d32f2f;" markdown="1">
+      en: >
+        We recruit approximately 4–6 PhD students each year. Applicants should
+        be interested and proactive in research, with solid programming and
+        mathematical foundations; relevant research experience is preferred.
+
+
+        **PhD Application methods:**
+
 
         - Direct-admission PhD from bachelor's: July recommendation summer camp, or Aug–Sep recommendation assessment.
-        - Application-assessment: Fall admission (Aug–Oct) / Spring admission (Mar–Apr next year).
-        - Those with a master's degree may apply through the university's fast-track program.
+
+        - Application-assessment: Fall admission (Aug–Oct) / Spring admission (Mar–Apr of the following year).
+
+        - Fast-track program: Applicants who have already obtained a Master's degree or are expected to graduate with a Master's degree within three months may apply through the university's fast-track program.
+
 
         **PhD programs available:**
 
-        - PhD at Harbin Institute of Technology
-        - Joint PhD with HIT and Pengcheng Laboratory
-        - Joint PhD with HIT and Great Bay University (Dongguan)
-  - title: {zh: 硕士生, en: Master Students}
+
+        - PhD at Harbin Institute of Technology (HIT) (academic or professional degree)
+
+        - Joint PhD with HIT and Pengcheng Laboratory (academic or professional degree)
+
+        - Other special or joint PhD programs (please refer to the relevant announcements for details)
+
+        - In addition, we may recommend and supervise several PhD students each year through Shenzhen Loop Area Institute (SLAI). Students are trained at SLAI and receive their degree and graduation certificates from HIT. A separate admission assessment organized by SLAI is required.
+
+
+        <div style="color: #d32f2f;" markdown="1">
+
+        **[Now Recruiting]**
+
+
+        We currently have multiple PhD openings for the 2027 intake, including:
+
+
+        - 1 joint PhD position with Pengcheng Laboratory
+
+        - 2–4 HIT PhD positions, including regular admission and special recruitment positions for urgent research needs
+
+        - 2–3 joint-training PhD positions with Shenzhen Loop Area Institute (SLAI)
+
+
+        Prospective applicants are encouraged to contact their intended supervisor in advance.
+
+        </div>
+  - title:
+      zh: 硕士生
+      en: Master Students
     content:
-      zh: 招收 2026 级硕士研究生 2–3 名，欢迎具有推免资格的同学提前联系，进入实验室参与科研活动。
-      en: We recruit 2–3 master's students for the Class of 2026. Students eligible for recommendation are welcome to contact us early and join lab research activities.
-  - title: {zh: 本科生, en: Undergraduate Students}
+      zh: |-
+        <div style="color: #d32f2f;" markdown="1">
+        **[正在招生]**
+        招收2027级硕士生4-5名，包括推荐和统考生。现有多个推免生名额，欢迎具有推免资格的同学提前联系。
+        </div>
+      en: >-
+        <div style="color: #d32f2f;" markdown="1">
+
+        **[Now Recruiting]**
+
+        We plan to recruit 4–5 Master’s students for the 2027 intake, including both recommended-exemption and National Entrance Examination applicants. Multiple recommended-exemption places are currently available, and students who are eligible for recommendation-based admission are encouraged to contact us in advance.
+
+        </div>
+  - title:
+      zh: 本科生
+      en: Undergraduate Students
     content:
-      zh: 欢迎学有余力的本科生参与科研项目，要求数学基础扎实、编程能力强。视科研贡献提供研究补助。
-      en: Undergraduates with strong math and programming skills are welcome to join research projects. Research stipends are available based on contribution.
+      zh: 欢迎学有余力的本科生参与科研项目，要求基础扎实、编程能力强，能够坚持参与科研活动。
+      en: Undergraduate students with strong academic foundations and programming
+        skills are welcome to participate in our research projects. Applicants
+        should be able to commit to sustained involvement in research
+        activities.
