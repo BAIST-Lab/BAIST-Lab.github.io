@@ -14,16 +14,10 @@ nav:
 
 {% include section.html %}
 
-时空大数据智能与计算实验室经费充足，聚焦前沿，科研思路兼顾高水平论文发表与实际应用价值。欢迎对数据挖掘、人工智能，尤其是时空大数据分析挖掘感兴趣的同学加盟我组。
+本实验室经费充足，聚焦前沿，科研思路兼顾高水平论文发表与实际应用价值。欢迎对人工智能、机器学习、数据挖掘、大数据分析计算等领域感兴趣的同学加盟。同时，欢迎研究方向与数据科学、大数据计算、机器学习与人工智能、AI4Science等方向相关的青年教师、博士后、研究助理加入团队。深圳市与我校提供具有竞争力的科研环境、启动资金与科研资源，具体意向欢迎邮件联系。
 {: .lang-zh}
 
-The Spatiotemporal Big Data Intelligence and Computing Lab has sufficient funding and focuses on frontier research, balancing high-quality publications with real-world applications. We welcome students interested in data mining, artificial intelligence, and especially spatiotemporal big data analytics to join us.
-{: .lang-en}
-
-除计算机专业外，我组也欢迎数学、通信、电子信息、GIS、交通等专业，具有深度学习和编程基础的同学申请博士。每年招收 2–4 名博士生，3–4 名硕士研究生。同时，欢迎研究方向与数据科学、大数据计算、机器学习与人工智能、计算机视觉、具身智能等方向相关的青年教师、博士后、研究助理加入团队。深圳市与我校提供具有竞争力的科研环境、启动资金与科研资源，具体意向欢迎邮件联系。
-{: .lang-zh}
-
-In addition to computer science, we welcome applicants from mathematics, communications, electronic information, GIS, and transportation with solid deep learning and programming foundations for PhD positions. We recruit 2–4 PhD students and 3–4 master's students each year. We also welcome faculty, postdocs, and research assistants working on data science, big data computing, machine learning &amp; AI, computer vision, and embodied intelligence. Shenzhen and HIT provide a competitive research environment, start-up funding, and resources. Please feel free to contact us by email.
+The lab is well funded and focuses on frontier research, with a research agenda that balances high-quality publications and practical value. We welcome students interested in artificial intelligence, machine learning, data mining, big data analytics and computing, and related fields. We also welcome early-career faculty, postdoctoral researchers, and research assistants whose interests align with data science, big data computing, machine learning and artificial intelligence, AI4Science, and related areas. Shenzhen and HIT provide a competitive research environment, start-up funding, and research resources. Please contact us by email to discuss specific opportunities.
 {: .lang-en}
 
 **招生招聘信息具体如下：**
