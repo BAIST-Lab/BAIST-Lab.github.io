@@ -23,6 +23,7 @@ nav:
 {: .lang-en}
 
 {% assign featured_categories = site.featured_categories | sort: "order" %}
+<div class="featured-publication-categories">
 {% for category in featured_categories %}
 {% assign category_works = featured_publications | where: "category", category.title %}
 {% if category_works.size > 0 %}
@@ -61,6 +62,8 @@ nav:
   </div>
 </section>
 {% endif %}
+
+</div>
 
 {% include section.html %}
 {% endif %}
