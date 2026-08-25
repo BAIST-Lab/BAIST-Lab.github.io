@@ -18,25 +18,35 @@ body_class: page-featured-publication
 </div>
 {% endif %}
 
-{% if page.link or page.code or page.data_link %}
 <div class="featured-publication-links">
   {% if page.link %}
   <a class="button featured-publication-detail-link" href="{{ page.link }}" target="_blank" rel="noopener noreferrer">
     <span class="lang-zh">链接</span><span class="lang-en">Link</span>
   </a>
+  {% else %}
+  <span class="button featured-publication-detail-link featured-publication-link-disabled" aria-disabled="true">
+    <span class="lang-zh">链接</span><span class="lang-en">Link</span>
+  </span>
   {% endif %}
   {% if page.code %}
   <a class="button featured-publication-detail-link" href="{{ page.code }}" target="_blank" rel="noopener noreferrer">
     <span class="lang-zh">代码</span><span class="lang-en">Code</span>
   </a>
+  {% else %}
+  <span class="button featured-publication-detail-link featured-publication-link-disabled" aria-disabled="true">
+    <span class="lang-zh">代码</span><span class="lang-en">Code</span>
+  </span>
   {% endif %}
   {% if page.data_link %}
   <a class="button featured-publication-detail-link" href="{{ page.data_link }}" target="_blank" rel="noopener noreferrer">
     <span class="lang-zh">数据</span><span class="lang-en">Data</span>
   </a>
+  {% else %}
+  <span class="button featured-publication-detail-link featured-publication-link-disabled" aria-disabled="true">
+    <span class="lang-zh">数据</span><span class="lang-en">Data</span>
+  </span>
   {% endif %}
 </div>
-{% endif %}
 
 {% include section.html %}
 
