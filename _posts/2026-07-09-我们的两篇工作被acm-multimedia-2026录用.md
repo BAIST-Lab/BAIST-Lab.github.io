@@ -1,5 +1,5 @@
 ---
-title: 我们的两篇工作被ACM Multimedia 2026录用
+title: 我们的两篇工作被 ACM Multimedia 接收
 image: images/news/LOGO-ACM-2026-V2.png
 detail_images: []
 date: 2026-07-10
@@ -19,8 +19,9 @@ summary_text:
     3D Human Pose Estimation,” have been accepted by ACM MM 2026."
 attachment: ""
 details:
-  zh: |-
-    我们实验室的两篇论文被多媒体领域顶级会议 KDD 2026 接收。研究内容围绕多模态POI推荐与人体位姿估计展开，具体论文信息将在正式发表后更新。
-  en: |-
-    Two papers from our lab have been accepted by KDD 2026, a top-tier conference in the multimedia field. The studies focus on multimodal POI recommendation and human pose estimation. Detailed information about the papers will be updated after their official publication.
+  zh: 我们实验室的两篇论文被多媒体领域顶级会议 KDD 2026 接收。研究内容围绕多模态POI推荐与人体位姿估计展开，具体论文信息将在正式发表后更新。
+  en: Two papers from our lab have been accepted by KDD 2026, a top-tier
+    conference in the multimedia field. The studies focus on multimodal POI
+    recommendation and human pose estimation. Detailed information about the
+    papers will be updated after their official publication.
 ---
