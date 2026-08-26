@@ -6,25 +6,17 @@ nav:
   title: {zh: 加入我们, en: Join Us}
 ---
 
-# {% include icon.html icon="fa-solid fa-chalkboard-user" %}加入我们
-{: .lang-zh}
-
-# {% include icon.html icon="fa-solid fa-chalkboard-user" %}Join Us
-{: .lang-en}
+<h1 class="lang-zh">{% include icon.html icon="fa-solid fa-chalkboard-user" %}加入我们</h1>
+<h1 class="lang-en">{% include icon.html icon="fa-solid fa-chalkboard-user" %}Join Us</h1>
 
 {% include section.html %}
 
-本实验室经费充足，聚焦前沿，科研思路兼顾高水平论文发表与实际应用价值。欢迎对人工智能、机器学习、数据挖掘、大数据分析计算等领域感兴趣的同学加盟。同时，欢迎研究方向与数据科学、大数据计算、机器学习与人工智能、AI4Science等方向相关的青年教师、博士后、研究助理加入团队。深圳市与我校提供具有竞争力的科研环境、启动资金与科研资源，具体意向欢迎邮件联系。
-{: .lang-zh}
+<p class="lang-zh">本实验室经费充足，聚焦前沿，科研思路兼顾高水平论文发表与实际应用价值。欢迎对人工智能、机器学习、数据挖掘、大数据分析计算等领域感兴趣的同学加盟。同时，欢迎研究方向与数据科学、大数据计算、机器学习与人工智能、AI4Science等方向相关的青年教师、博士后、研究助理加入团队。深圳市与我校提供具有竞争力的科研环境、启动资金与科研资源，具体意向欢迎邮件联系。</p>
 
-The lab is well funded and focuses on frontier research, with a research agenda that balances high-quality publications and practical value. We welcome students interested in artificial intelligence, machine learning, data mining, big data analytics and computing, and related fields. We also welcome early-career faculty, postdoctoral researchers, and research assistants whose interests align with data science, big data computing, machine learning and artificial intelligence, AI4Science, and related areas. Shenzhen and HIT provide a competitive research environment, start-up funding, and research resources. Please contact us by email to discuss specific opportunities.
-{: .lang-en}
+<p class="lang-en">The lab is well funded and focuses on frontier research, with a research agenda that balances high-quality publications and practical value. We welcome students interested in artificial intelligence, machine learning, data mining, big data analytics and computing, and related fields. We also welcome early-career faculty, postdoctoral researchers, and research assistants whose interests align with data science, big data computing, machine learning and artificial intelligence, AI4Science, and related areas. Shenzhen and HIT provide a competitive research environment, start-up funding, and research resources. Please contact us by email to discuss specific opportunities.</p>
 
-**招生招聘信息具体如下：**
-{: .lang-zh}
-
-**Specific openings are as follows:**
-{: .lang-en}
+<p class="lang-zh"><strong>招生招聘信息具体如下：</strong></p>
+<p class="lang-en"><strong>Specific openings are as follows:</strong></p>
 
 {% for section in site.data.join.sections %}
 <h2 class="lang-zh">{{ forloop.index }}. {{ section.title.zh }}</h2>

@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    本科来自于哈尔滨工业大学（深圳），研究方向为大模型MoE框架架构。
+  en: |-
+    I received my bachelor’s degree from Harbin Institute of Technology (Shenzhen). My research focuses on large language model MoE framework architecture.
 ---
-本科来自于哈尔滨工业大学（深圳），研究方向为大模型MoE框架架构。
-{: .lang-zh}
-
-I received my bachelor’s degree from Harbin Institute of Technology (Shenzhen). My research focuses on large language model MoE framework architecture.
-{: .lang-en}

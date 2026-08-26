@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    张卓，2022级博士生。
+  en: |-
+    Zhuo Zhang, PhD Student (Class of 2022).
 ---
-张卓，2022级博士生。
-{: .lang-zh}
-
-Zhuo Zhang, PhD Student (Class of 2022).
-{: .lang-en}

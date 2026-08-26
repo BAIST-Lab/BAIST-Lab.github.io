@@ -8,9 +8,9 @@ description: {zh: 2023级硕士毕业生, en: Master Graduate (Class of 2023)}
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    周子瑞，2023级硕士生。
+  en: |-
+    Zirui Zhou, Master Student (Class of 2023).
 ---
-周子瑞，2023级硕士生。
-{: .lang-zh}
-
-Zirui Zhou, Master Student (Class of 2023).
-{: .lang-en}

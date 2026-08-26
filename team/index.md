@@ -13,68 +13,47 @@ nav:
     - {title: {zh: 已毕业成员, en: Alumni}, anchor: alumni}
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}团队成员
-{: .lang-zh #people}
-
-# {% include icon.html icon="fa-solid fa-users" %}People
-{: .lang-en #people-en}
+<h1 class="lang-zh" id="people">{% include icon.html icon="fa-solid fa-users" %}团队成员</h1>
+<h1 class="lang-en" id="people-en">{% include icon.html icon="fa-solid fa-users" %}People</h1>
 
 {% include section.html %}
 
-## 教师
-{: .lang-zh #faculty}
-
-## Faculty
-{: .lang-en #faculty-en}
+<h2 class="lang-zh" id="faculty">教师</h2>
+<h2 class="lang-en" id="faculty-en">Faculty</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'professor' or role == 'teacher'" sort="date" %}
 
 {% include section.html %}
 
-## 博士后
-{: .lang-zh #postdocs}
-
-## Postdocs
-{: .lang-en #postdocs-en}
+<h2 class="lang-zh" id="postdocs">博士后</h2>
+<h2 class="lang-en" id="postdocs-en">Postdocs</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'postdoc'" sort="date" %}
 
 {% include section.html %}
 
-## 博士生
-{: .lang-zh #phd}
-
-## Ph.D Students
-{: .lang-en #phd-en}
+<h2 class="lang-zh" id="phd">博士生</h2>
+<h2 class="lang-en" id="phd-en">Ph.D Students</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'phd'" sort="date" %}
 
 {% include section.html %}
 
-## 硕士生
-{: .lang-zh #master}
-
-## Master Students
-{: .lang-en #master-en}
+<h2 class="lang-zh" id="master">硕士生</h2>
+<h2 class="lang-en" id="master-en">Master Students</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'master'" sort="date" %}
 
 {% include section.html %}
 
-## 本科生
-{: .lang-zh #undergraduate}
-
-## Undergraduate Students
-{: .lang-en #undergraduate-en}
+<h2 class="lang-zh" id="undergraduate">本科生</h2>
+<h2 class="lang-en" id="undergraduate-en">Undergraduate Students</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'undergrad'" sort="date" %}
 
 {% include section.html %}
 
-## 已毕业成员
-{: .lang-zh #alumni}
-
-## Alumni
-{: .lang-en #alumni-en}
+<h2 class="lang-zh" id="alumni">已毕业成员</h2>
+<h2 class="lang-en" id="alumni-en">Alumni</h2>
 
 {% include list.html data="members" component="portrait" filter="role == 'graduate'" sort="date" %}

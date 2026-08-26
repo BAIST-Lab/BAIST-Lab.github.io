@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    储勇，2023级博士生。他的研究方向包括时空智能（多模态数据驱动的城市预测）和信号AI（ISAC的无线信道建模与智能推断）
+  en: |-
+    Yong Chu, PhD Student (Class of 2023). His research focuses on Spatio-Temporal Intelligence (Multi-modal data-driven urban prediction); AI for Signal (Wireless channel modeling and intelligent inference for ISAC)
 ---
-储勇，2023级博士生。他的研究方向包括时空智能（多模态数据驱动的城市预测）和信号AI（ISAC的无线信道建模与智能推断）
-{: .lang-zh}
-
-Yong Chu, PhD Student (Class of 2023). His research focuses on Spatio-Temporal Intelligence (Multi-modal data-driven urban prediction); AI for Signal (Wireless channel modeling and intelligent inference for ISAC)
-{: .lang-en}

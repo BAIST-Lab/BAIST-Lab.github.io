@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    我本科就读于华南理工大学计算机科学与技术专业，现于哈尔滨工业大学（深圳）计算机科学与技术学院攻读硕士研究生。
+  en: |-
+    I‘ve received my Bachelor’s degree in Computer Science and Technology from South China University of Technology. Currently I am pursuing my Master’s degree at the School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen).
 ---
-我本科就读于华南理工大学计算机科学与技术专业，现于哈尔滨工业大学（深圳）计算机科学与技术学院攻读硕士研究生。
-{: .lang-zh}
-
-I‘ve received my Bachelor’s degree in Computer Science and Technology from South China University of Technology. Currently I am pursuing my Master’s degree at the School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen).
-{: .lang-en}

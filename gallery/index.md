@@ -6,19 +6,14 @@ nav:
   title: {zh: 相册, en: Gallery}
 ---
 
-# {% include icon.html icon="fa-regular fa-images" %}相册
-{: .lang-zh}
-
-# {% include icon.html icon="fa-regular fa-images" %}Gallery
-{: .lang-en}
+<h1 class="lang-zh">{% include icon.html icon="fa-regular fa-images" %}相册</h1>
+<h1 class="lang-en">{% include icon.html icon="fa-regular fa-images" %}Gallery</h1>
 
 {% include section.html %}
 
-实验室科研活动与生活瞬间，点击图片可放大查看。
-{: .lang-zh}
+<p class="lang-zh">实验室科研活动与生活瞬间，点击图片可放大查看。</p>
 
-Moments from lab research and activities. Click an image to enlarge.
-{: .lang-en}
+<p class="lang-en">Moments from lab research and activities. Click an image to enlarge.</p>
 
 {% include section.html %}
 

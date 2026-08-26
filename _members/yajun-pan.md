@@ -12,8 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    潘亚军，本科毕业于哈尔滨工业大学（深圳）。主要研究方向为强化学习、交通信号控制等。
+  en: |-
+    I received my bachelor’s degree from Harbin Institute of Technology (Shenzhen). My research focuses on reinforcement learning, traffic signal control, and related topics.
 ---
-潘亚军，本科毕业于哈尔滨工业大学（深圳）。主要研究方向为强化学习、交通信号控制等。
-{: .lang-zh}
-I received my bachelor’s degree from Harbin Institute of Technology (Shenzhen). My research focuses on reinforcement learning, traffic signal control, and related topics.
-{: .lang-en}

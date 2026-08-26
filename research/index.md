@@ -6,11 +6,8 @@ nav:
   title: {zh: 发表论著, en: Publications}
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}发表论著
-{: .lang-zh}
-
-# {% include icon.html icon="fa-solid fa-microscope" %}Publications
-{: .lang-en}
+<h1 class="lang-zh">{% include icon.html icon="fa-solid fa-microscope" %}发表论著</h1>
+<h1 class="lang-en">{% include icon.html icon="fa-solid fa-microscope" %}Publications</h1>
 
 {% include section.html %}
 

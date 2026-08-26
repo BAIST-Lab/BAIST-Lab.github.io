@@ -22,7 +22,12 @@ body_class: page-member
   </div>
 
   <div class="member-profile-introduction">
-    {{ content }}
+    {% if page.bio %}
+      <div class="lang-zh">{{ page.bio.zh | markdownify }}</div>
+      <div class="lang-en">{{ page.bio.en | markdownify }}</div>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
 </div>
 

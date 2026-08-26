@@ -6,21 +6,15 @@ nav:
   title: {zh: 研究成果, en: Research Outcomes}
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}研究成果
-{: .lang-zh}
-
-# {% include icon.html icon="fa-solid fa-wrench" %}Research Outcomes
-{: .lang-en}
+<h1 class="lang-zh">{% include icon.html icon="fa-solid fa-wrench" %}研究成果</h1>
+<h1 class="lang-en">{% include icon.html icon="fa-solid fa-wrench" %}Research Outcomes</h1>
 
 {% include section.html %}
 
 {% assign featured_publications = site.featured_publications %}
 {% if featured_publications.size > 0 %}
-## 代表工作
-{: .lang-zh}
-
-## Featured Works
-{: .lang-en}
+<h2 class="lang-zh">代表工作</h2>
+<h2 class="lang-en">Featured Works</h2>
 
 {% assign featured_categories = site.featured_categories | sort: "order" %}
 <div class="featured-publication-categories">
@@ -70,11 +64,8 @@ nav:
 
 {% assign results = site.projects | sort: "start_date" | reverse %}
 {% if results.size > 0 %}
-## 研究课题
-{: .lang-zh}
-
-## Research Topics
-{: .lang-en}
+<h2 class="lang-zh">研究课题</h2>
+<h2 class="lang-en">Research Topics</h2>
 
 <div class="research-result-list">
   {% for result in results %}

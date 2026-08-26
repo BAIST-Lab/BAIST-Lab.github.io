@@ -19,7 +19,12 @@ layout: default
 
 {% include section.html %}
 
-{{ content }}
+{% if page.details %}
+  <div class="lang-zh">{{ page.details.zh | markdownify }}</div>
+  <div class="lang-en">{{ page.details.en | markdownify }}</div>
+{% else %}
+  {{ content }}
+{% endif %}
 
 {% if page.detail_images and page.detail_images.size > 0 %}
 <div class="news-detail-gallery">

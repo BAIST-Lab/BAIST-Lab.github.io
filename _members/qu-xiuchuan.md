@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    渠秀川，2025级硕士生。
+  en: |-
+    Xiuchuan Qu, Master Student (Class of 2025).
 ---
-渠秀川，2025级硕士生。
-{: .lang-zh}
-
-Xiuchuan Qu, Master Student (Class of 2025).
-{: .lang-en}

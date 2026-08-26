@@ -12,9 +12,9 @@ description:
 other_info:
   - zh: 导师：周逊教授
     en: "Advisor: Prof. Xun Zhou"
+bio:
+  zh: |-
+    时空大数据智能与计算实验室24级博士生。研究方向为时空图数据及其生成方法。
+  en: |-
+    A PhD student (Class of 2024) at the Laboratory of Spatiotemporal Big Data Intelligence and Computing. Research interests include spatio-temporal graph data and generative methods.
 ---
-时空大数据智能与计算实验室24级博士生。研究方向为时空图数据及其生成方法。
-{: .lang-zh}
-
-A PhD student (Class of 2024) at the Laboratory of Spatiotemporal Big Data Intelligence and Computing. Research interests include spatio-temporal graph data and generative methods.
-{: .lang-en}
