@@ -84,9 +84,9 @@ items:
     date: 2025-11-03
     link: https://doi.org/10.1145/3748636.3762719
     type: conference
-  - id: doi:10.2139/ssrn.5087720
-    title: "From Continuous Pre-Training to Alignment: A Comprehensive Toolkit for
-      Large Language Models in Federated Learning"
+  - id: doi:10.1016/j.neucom.2025.130572
+    title: "From continuous pre-training to alignment: A comprehensive toolkit for
+      large language models in federated learning"
     authors:
       - Zhuo Zhang
       - Yukun Zhang
@@ -95,9 +95,9 @@ items:
       - Xun Zhou
       - Hui Wang
       - Zenglin Xu
-    publisher: Elsevier BV
-    date: 2025-01-01
-    link: https://doi.org/10.2139/ssrn.5087720
+    publisher: Neurocomputing
+    date: 2025-09-01
+    link: https://doi.org/10.1016/j.neucom.2025.130572
     type: journal
   - title: "RoPOI: Robust POI Recommendation based on Modality Disentanglement and
       Missing Representation Generation"
@@ -170,3 +170,45 @@ items:
       - Yue Yu
     publisher: ICLR 2026
     date: 2026-03-01
+  - title: "SHAPE: Spatial Hyperbolic-Embedding Augmented Pretraining for Estimated
+      Time of Arrival on Obfuscated Trajectories"
+    authors:
+      - Ruopu Li
+      - Yong Chu
+      - Kai Yang
+      - James Jianqiao Yu
+      - Lixia Wu
+      - Xun Zhou
+    publisher: ICDM 2026
+    date: 2026-08-26
+  - id: doi:10.1016/j.patcog.2026.114754
+    title: "DSTA4D: Content-aware adaptive decoupling for 4D point cloud video
+      understanding"
+    authors:
+      - Jiaze Wang
+      - Jiayi Tian
+      - Xun Zhou
+      - Wenzhe Zhao
+      - Tian Xia
+      - Pengju Ren
+    publisher: Pattern Recognition
+    date: 2026-08-25
+    link: https://doi.org/10.1016/j.patcog.2026.114754
+    type: journal
+  - id: doi:10.1145/3806196
+    title: "<tt>PPFedIT</tt> : Towards Privacy-preserving Federated Instruction
+      Tuning with Few-shot Local Examples"
+    authors:
+      - Zhuo Zhang
+      - Jingyuan Zhang
+      - Jintao Huang
+      - Hui Wang
+      - Yue Yu
+      - Hongzhi Zhang
+      - Xun Zhou
+      - Lizhen Qu
+      - Zenglin Xu
+    publisher: ACM Transactions on Intelligent Systems and Technology
+    date: 2026-07-23
+    link: https://doi.org/10.1145/3806196
+    type: journal
