@@ -27,12 +27,14 @@ layout: default
     {% assign detail_image_path = detail_image | default: '' | strip %}
     {% if detail_image_path != '' %}
     <figure class="news-detail-gallery-item">
-      <img
-        src="{{ detail_image_path | relative_url | uri_escape }}"
-        alt="{{ page.title | xml_escape }}"
-        loading="lazy"
-        decoding="async"
-      >
+      <a href="{{ detail_image_path | relative_url | uri_escape }}" target="_blank" rel="noopener noreferrer">
+        <img
+          src="{{ detail_image_path | relative_url | uri_escape }}"
+          alt="{{ page.title | xml_escape }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </a>
     </figure>
     {% endif %}
   {% endfor %}
