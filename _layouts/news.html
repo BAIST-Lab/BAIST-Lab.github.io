@@ -21,6 +21,24 @@ layout: default
 
 {{ content }}
 
+{% if page.detail_images and page.detail_images.size > 0 %}
+<div class="news-detail-gallery">
+  {% for detail_image in page.detail_images %}
+    {% assign detail_image_path = detail_image | default: '' | strip %}
+    {% if detail_image_path != '' %}
+    <figure class="news-detail-gallery-item">
+      <img
+        src="{{ detail_image_path | relative_url | uri_escape }}"
+        alt="{{ page.title | xml_escape }}"
+        loading="lazy"
+        decoding="async"
+      >
+    </figure>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
 {% assign attach_val = page.attachment | default: '' | strip %}
 {% if attach_val != '' %}
 {% include section.html %}
