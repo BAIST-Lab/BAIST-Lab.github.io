@@ -1,9 +1,7 @@
 ---
 title: 我们的两篇工作被ACM Multimedia 2026录用
 image: images/news/LOGO-ACM-2026-V2.png
-detail_images:
-  - images/news/Cryptography-based-privacy-preserving-large-language-models_a-lifecycle-survey-of-frameworks-methods-and-future-directions.png
-  - images/news/hurst.jpg
+detail_images: []
 date: 2026-07-10
 news_type:
   preset: paper
