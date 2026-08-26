@@ -1,6 +1,9 @@
 ---
 title: 我们的两篇工作被ACM Multimedia 2026录用
 image: images/news/LOGO-ACM-2026-V2.png
+detail_images:
+  - images/news/Cryptography-based-privacy-preserving-large-language-models_a-lifecycle-survey-of-frameworks-methods-and-future-directions.png
+  - images/news/hurst.jpg
 date: 2026-07-10
 news_type:
   preset: paper
@@ -16,7 +19,7 @@ summary_text:
     Recommendation based on Modality Disentanglement and Missing Representation
     Generation” and “Seeing without Cameras: Interpretable Wireless Fusion for
     3D Human Pose Estimation,” have been accepted by ACM MM 2026."
-attachment: images/news/LOGO-ACM-2026-V2.png
+attachment: ""
 ---
 我们实验室的两篇论文被多媒体领域顶级会议 KDD 2026 接收。研究内容围绕多模态POI推荐与人体位姿估计展开，具体论文信息将在正式发表后更新。
 {: .lang-zh}
