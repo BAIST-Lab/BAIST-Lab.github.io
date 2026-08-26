@@ -17,5 +17,5 @@ body_class: page-top-level
 <h2 class="lang-en center">Highlights</h2>
 
 {% for post in site.posts %}
-{% include news.html url=post.url title=post.title image=post.image date=post.date news_type=post.news_type summary=post.summary_text %}
+{% include news.html url=post.url title=post.title title_en=post.title_en image=post.image date=post.date news_type=post.news_type summary=post.summary_text %}
 {% endfor %}

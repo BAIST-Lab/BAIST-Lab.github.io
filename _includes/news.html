@@ -2,11 +2,14 @@
 <div class="news-card">
   <a class="news-card-link" href="{{ include.url | relative_url }}">
     {% if include.image %}
-    <img class="news-image" src="{{ include.image | relative_url }}" alt="{{ include.title | xml_escape }}" loading="lazy">
+    <img class="news-image" src="{{ include.image | relative_url }}" alt="{{ include.title_en | default: include.title | xml_escape }}" loading="lazy">
     {% endif %}
     <div class="news-info">
       <div class="news-info-header">
-        <span class="news-title">{{ include.title }}</span>
+        <span class="news-title">
+          <span class="lang-zh">{{ include.title }}</span>
+          <span class="lang-en">{{ include.title_en | default: include.title }}</span>
+        </span>
         {% include news-type.html type=include.news_type %}
       </div>
       <span class="news-date">{{ include.date | date: "%Y-%m-%d" }}</span>

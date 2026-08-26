@@ -1,5 +1,6 @@
 ---
 title: 实验室研究成果 DSTA4D 被 Pattern Recognition 接收
+title_en: "Lab Paper DSTA4D Accepted by Pattern Recognition"
 image: images/news/pr.png
 date: 2026-08-27
 news_type:

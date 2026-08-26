@@ -4,7 +4,10 @@ layout: default
 
 {% include section.html %}
 
-<h1 class="center">{{ page.title }}</h1>
+<h1 class="center">
+  <span class="lang-zh">{{ page.title }}</span>
+  <span class="lang-en">{{ page.title_en | default: page.title }}</span>
+</h1>
 
 <div class="news-detail-meta">
   <span class="news-detail-date">{{ page.date | date: "%Y-%m-%d" }}</span>
@@ -13,7 +16,7 @@ layout: default
 
 {% if page.image %}
 <div class="news-detail-image">
-  <img src="{{ page.image | relative_url }}" alt="{{ page.title | xml_escape }}">
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title_en | default: page.title | xml_escape }}">
 </div>
 {% endif %}
 
@@ -35,7 +38,7 @@ layout: default
       <a href="{{ detail_image_path | relative_url | uri_escape }}" target="_blank" rel="noopener noreferrer">
         <img
           src="{{ detail_image_path | relative_url | uri_escape }}"
-          alt="{{ page.title | xml_escape }}"
+          alt="{{ page.title_en | default: page.title | xml_escape }}"
           loading="lazy"
           decoding="async"
         >

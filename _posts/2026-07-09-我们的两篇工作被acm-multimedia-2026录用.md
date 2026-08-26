@@ -1,5 +1,6 @@
 ---
 title: 我们的两篇工作被 ACM Multimedia 接收
+title_en: "Two of Our Papers Accepted by ACM Multimedia"
 image: images/news/LOGO-ACM-2026-V2.png
 detail_images: []
 date: 2026-07-10
