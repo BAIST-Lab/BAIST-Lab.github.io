@@ -3,7 +3,7 @@ title: Jiefeng Wang
 name:
   zh: 王杰锋
   en: Jiefeng Wang
-image: images/team/wangjiefeng.jpg
+image: images/team/wangjiefeng.webp
 role: undergrad
 description:
   zh: 2024级本科生

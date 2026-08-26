@@ -3,7 +3,7 @@ title: Zhaohan Dong
 name:
   zh: 董钊涵
   en: Zhaohan Dong
-image: images/team/dongzhaohan.jpg
+image: images/team/dongzhaohan.webp
 date: 2026-09-01
 role: phd
 description:

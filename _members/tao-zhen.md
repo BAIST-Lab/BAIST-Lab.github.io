@@ -3,7 +3,7 @@ title: Zhen Tao
 name:
   zh: 陶震
   en: Zhen Tao
-image: images/team/taozhen.jpg
+image: images/team/taozhen.webp
 date: 2025-09-01
 role: phd
 description:

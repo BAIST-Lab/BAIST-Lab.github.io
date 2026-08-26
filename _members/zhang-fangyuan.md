@@ -3,7 +3,7 @@ title: Fangyuan Zhang
 name:
   zh: 张芳源
   en: Fangyuan Zhang
-image: images/team/zhangfangyuan.png
+image: images/team/zhangfangyuan.webp
 email: " zhangfangyuan@hit.edu.cn"
 date: 2024-01-01
 role: professor

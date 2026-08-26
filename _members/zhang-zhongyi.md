@@ -3,7 +3,7 @@ title: Zhongyi Zhang
 name:
   zh: 张忠义
   en: Zhongyi Zhang
-image: images/team/zhangzhongyi.jpg
+image: images/team/zhangzhongyi.webp
 date: 2025-09-01
 role: master
 description:

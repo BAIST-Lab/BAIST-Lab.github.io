@@ -3,7 +3,7 @@ title: Yaopu Zhang
 name:
   zh: 张窅溥
   en: Yaopu Zhang
-image: images/team/zyp.jpg
+image: images/team/zyp.webp
 date: 2024-09-01
 role: phd
 description:

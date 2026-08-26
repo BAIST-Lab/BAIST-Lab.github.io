@@ -3,7 +3,7 @@ title: Xinyue Wang
 name:
   zh: 王欣悦
   en: Xinyue Wang
-image: images/team/wangxinyue.jpg
+image: images/team/wangxinyue.webp
 date: 2025-09-01
 role: phd
 description:

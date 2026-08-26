@@ -34,10 +34,13 @@ layout: default
   {% for detail_image in page.detail_images %}
     {% assign detail_image_path = detail_image | default: '' | strip %}
     {% if detail_image_path != '' %}
+    {% assign detail_image_webp = detail_image_path | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
+    {% assign detail_image_optimized = detail_image_webp | file_exists %}
+    {% assign detail_image_display = detail_image_optimized | default: detail_image_path %}
     <figure class="news-detail-gallery-item">
       <a href="{{ detail_image_path | relative_url | uri_escape }}" target="_blank" rel="noopener noreferrer">
         <img
-          src="{{ detail_image_path | relative_url | uri_escape }}"
+          src="{{ detail_image_display | relative_url | uri_escape }}"
           alt="{{ page.title_en | default: page.title | xml_escape }}"
           loading="lazy"
           decoding="async"

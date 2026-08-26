@@ -3,7 +3,7 @@ title: Xu Shi
 name:
   zh: 时旭
   en: Xu Shi
-image: images/team/shixu.jpg
+image: images/team/shixu.webp
 date: 2025-09-01
 role: phd
 description:

@@ -3,7 +3,7 @@ title: Peijun Zheng
 name:
   zh: 郑沛钧
   en: Peijun Zheng
-image: images/team/zhenpeijun2.png
+image: images/team/zhenpeijun2.webp
 date: 2026-09-01
 role: phd
 description:

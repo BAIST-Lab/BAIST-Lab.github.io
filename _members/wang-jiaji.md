@@ -3,7 +3,7 @@ title: Jiaji Wang
 name:
   zh: 王佳佶
   en: Jiaji Wang
-image: images/team/wangjiaji.jpg
+image: images/team/wangjiaji.webp
 date: 2026-09-01
 role: master
 description:

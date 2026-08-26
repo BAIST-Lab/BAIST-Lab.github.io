@@ -3,7 +3,7 @@ title: Kanyu Bao
 name:
   zh: 鲍侃宇
   en: Kanyu Bao
-image: images/team/baokanyu.jpg
+image: images/team/baokanyu.webp
 date: 2023-09-01
 role: phd
 description:

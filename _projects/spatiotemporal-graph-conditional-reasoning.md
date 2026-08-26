@@ -11,7 +11,7 @@ end_date: "2028-12"
 role:
   zh: 主持
   en: Principal Investigator
-image: images/photo.jpg
+image: images/photo.webp
 summary_text:
   zh: 研究时空图中的自相关结构建模与条件生成方法，为复杂时空状态推演提供模型与算法支持。
   en: This project studies autocorrelated structure modeling and conditional generation for spatiotemporal graphs to support reasoning over complex spatiotemporal states.

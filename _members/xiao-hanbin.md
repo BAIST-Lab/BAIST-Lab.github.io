@@ -1,7 +1,7 @@
 ---
 name: {zh: 肖涵彬, en: Hanbin Xiao}
 title: Hanbin Xiao
-image: images/team/xiaohanbin.jpg
+image: images/team/xiaohanbin.webp
 role: master
 date: '2024-09-01'
 description: {zh: 2024级硕士生, en: Master Student (Class of 2024)}

@@ -3,7 +3,7 @@ title: Yong Chu
 name:
   zh: 储勇
   en: Yong Chu
-image: images/team/chuyong.jpg
+image: images/team/chuyong.webp
 date: 2023-09-01
 role: phd
 description:

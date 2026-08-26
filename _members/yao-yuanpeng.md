@@ -1,7 +1,7 @@
 ---
 name: {zh: 姚元鹏, en: Yuanpeng Yao}
 title: Yuanpeng Yao
-image: images/team/yaoyuanpeng.jpg
+image: images/team/yaoyuanpeng.webp
 role: phd
 date: '2026-09-01'
 description: {zh: 2026级博士生, en: PhD Student (Class of 2026)}

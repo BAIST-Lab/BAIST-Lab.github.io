@@ -9,7 +9,7 @@ name:
 venue:
   zh: ICLR 2026
   en: ICLR 2026
-image: images/featured-works/map-as-prompt.png
+image: images/featured-works/map-as-prompt.webp
 summary_text:
   zh: 提出多模态无线定位基础模型 SigMap，以周期自适应掩码学习稳健的信号表示，并将三维地图作为轻量提示，实现面向未知环境的跨场景定位。
   en: SigMap combines cycle-adaptive masked signal modeling with lightweight 3D

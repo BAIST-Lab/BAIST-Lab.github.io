@@ -8,7 +8,7 @@ name:
 venue:
   zh: 深圳市科技创新局重点产业研发项目
   en: Shenzhen Science and Technology Innovation Bureau Key Industry R&D Project
-image: images/featured-works/zhihui.png
+image: images/featured-works/zhihui.webp
 summary_text:
   zh: 融合多模态感知、具身智能与交通管控技术，研究面向复杂交通环境的自主理解、推理和决策方法。
   en: This project integrates multimodal perception, embodied intelligence, and

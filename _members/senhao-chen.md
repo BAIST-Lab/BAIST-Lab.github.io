@@ -3,7 +3,7 @@ title: Senhao Chen
 name:
   zh: 程森浩
   en: Senhao Chen
-image: images/team/csh_2026-08-19-02-49-26_personal.jpg
+image: images/team/csh_2026-08-19-02-49-26_personal.webp
 date: 2026-09-01
 role: phd
 description:

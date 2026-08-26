@@ -3,7 +3,7 @@ title: Zhe Wang
 name:
   zh: 王哲
   en: Zhe Wang
-image: images/team/wangzhe.jpg
+image: images/team/wangzhe.webp
 date: 2023-09-01
 role: undergrad
 description:

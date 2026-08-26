@@ -3,7 +3,7 @@ title: Xun Zhou
 name:
   zh: 周逊（团队负责人）
   en: Xun Zhou
-image: images/team/zhouxun.jpg
+image: images/team/zhouxun.webp
 email: zhouxun2023@hit.edu.cn
 date: 2023-09-01
 role: professor

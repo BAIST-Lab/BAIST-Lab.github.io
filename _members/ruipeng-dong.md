@@ -3,7 +3,7 @@ title: Ruipeng Dong
 name:
   en: Ruipeng Dong
   zh: 董芮朋
-image: images/team/Darol_2026-08-20-15-49-15_董芮朋.jpg
+image: images/team/Darol_2026-08-20-15-49-15_董芮朋.webp
 date: 2026-09-01
 role: phd
 description:

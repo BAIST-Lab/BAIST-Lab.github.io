@@ -3,7 +3,7 @@ title: Zhonghao Ning
 name:
   zh: 宁中昊
   en: Zhonghao Ning
-image: images/team/ningzhonghao.jpg
+image: images/team/ningzhonghao.webp
 date: 2023-09-01
 role: undergrad
 description:

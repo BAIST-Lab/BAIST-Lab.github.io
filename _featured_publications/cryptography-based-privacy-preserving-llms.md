@@ -9,7 +9,7 @@ name:
 venue:
   zh: Artificial Intelligence Review 2026
   en: Artificial Intelligence Review 2026
-image: images/featured-works/Cryptography-based-privacy-preserving-large-language-models_a-lifecycle-survey-of-frameworks-methods-and-future-directions.png
+image: images/featured-works/Cryptography-based-privacy-preserving-large-language-models_a-lifecycle-survey-of-frameworks-methods-and-future-directions.webp
 summary_text:
   zh: 系统梳理密码学驱动的大语言模型隐私保护研究，围绕数据选择、微调和推理等生命周期阶段归纳现有框架与方法，并总结未来研究方向。
   en: This survey organizes cryptography-based privacy-preserving LLM research

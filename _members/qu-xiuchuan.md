@@ -3,7 +3,7 @@ title: Xiuchuan Qu
 name:
   zh: 渠秀川
   en: Xiuchuan Qu
-image: images/team/quxiuchuan.png
+image: images/team/quxiuchuan.webp
 date: 2025-09-01
 role: master
 description:

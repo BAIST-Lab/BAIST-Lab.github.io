@@ -1,12 +1,12 @@
 # 相册照片（可在后台「相册」中增删改，image 为图片路径，caption 为描述）
 photos:
-  - image: images/gallery/photo1.jpg
+  - image: images/gallery/photo1.webp
     caption: {zh: "", en: ""}
-  - image: images/gallery/photo2.jpg
+  - image: images/gallery/photo2.webp
     caption: {zh: "", en: ""}
-  - image: images/gallery/photo3.jpg
+  - image: images/gallery/photo3.webp
     caption: {zh: "", en: ""}
-  - image: images/gallery/photo4.jpg
+  - image: images/gallery/photo4.webp
     caption: {zh: "", en: ""}
-  - image: images/gallery/photo5.jpg
+  - image: images/gallery/photo5.webp
     caption: {zh: "", en: ""}

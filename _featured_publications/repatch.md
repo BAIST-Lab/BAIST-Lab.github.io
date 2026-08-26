@@ -9,7 +9,7 @@ name:
 venue:
   zh: KDD 2026
   en: KDD 2026
-image: images/featured-works/repatch.png
+image: images/featured-works/repatch.webp
 summary_text:
   zh: 提出两阶段预测框架 RePatch，通过熵引导的动态分块、时间交互建模与向量量化，学习紧凑、可迁移且可复用的离散时间表示，并在 14
     个真实数据集上展现出领先的预测与跨场景泛化能力。

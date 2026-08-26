@@ -9,7 +9,7 @@ name:
 venue:
   zh: KDD 2026
   en: KDD 2026
-image: images/featured-works/hurst.png
+image: images/featured-works/hurst.webp
 summary_text:
   zh: 面向城市时空预测中的数据异质性问题，研究能够适应不同区域和场景的城市基础模型。
   en: A heterogeneity-adaptive urban foundation model for spatiotemporal

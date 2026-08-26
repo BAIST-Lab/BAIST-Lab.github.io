@@ -3,7 +3,7 @@ title: Ruopu Li
 name:
   zh: 李若朴
   en: Ruopu Li
-image: images/team/liruopu.jpg
+image: images/team/liruopu.webp
 date: 2024-09-01
 role: master
 description:

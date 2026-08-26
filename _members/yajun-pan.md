@@ -3,7 +3,7 @@ title: Yajun Pan
 name:
   zh: 潘亚军
   en: Yajun Pan
-image: images/team/pyj.jpg
+image: images/team/pyj.webp
 date: 2024-08-30
 role: master
 description:

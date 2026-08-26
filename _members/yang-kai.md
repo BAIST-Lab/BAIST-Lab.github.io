@@ -3,7 +3,7 @@ title: Kai Yang
 name:
   zh: 杨凯
   en: Kai Yang
-image: images/team/yangkai.jpg
+image: images/team/yangkai.webp
 date: 2025-09-01
 role: phd
 description:
