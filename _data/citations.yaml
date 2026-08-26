@@ -133,8 +133,7 @@ items:
     link: https://doi.org/10.1145/3770855.3817683
     type: conference
   - title: "SecP-Tuning: Efficient Privacy-Preserving Prompt Tuning for Large
-      Language Models via MPC. In International Conference on Learning
-      Representations"
+      Language Models via MPC"
     authors:
       - Jinglong Luo
       - Zhuo Zhang
@@ -196,8 +195,8 @@ items:
     link: https://doi.org/10.1016/j.patcog.2026.114754
     type: journal
   - id: doi:10.1145/3806196
-    title: "<tt>PPFedIT</tt> : Towards Privacy-preserving Federated Instruction
-      Tuning with Few-shot Local Examples"
+    title: "PPFedIT: Towards Privacy-preserving Federated Instruction Tuning with
+      Few-shot Local Examples"
     authors:
       - Zhuo Zhang
       - Jingyuan Zhang
