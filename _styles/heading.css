@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 40px 0 20px 0;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 1.6rem;
+  font-weight: var(--regular);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--light-gray);
+  font-weight: var(--regular);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+main > section > h1:first-child,
+main > section > h1:first-child + h1,
+main > section > h2:first-child,
+main > section > h2:first-child + h2 {
+  margin-top: 10px;
+}
+
+main > section > h1:first-child,
+main > section > h1:first-child + h1 {
+  margin-bottom: 24px;
+}
+
+body.page-top-level main > section:first-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 120px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+body.page-top-level main > section:first-child > h1:first-child,
+body.page-top-level main > section:first-child > h1:first-child + h1 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) > .icon {
+  margin-right: 1em;
+  color: var(--light-gray);
+}
+
+/*# sourceMappingURL=heading.css.map */
