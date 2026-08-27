@@ -1,10 +1,14 @@
+# BAIST Lab Website
 
-  ![on-push](../../actions/workflows/on-push.yaml/badge.svg)
-  ![on-pull-request](../../actions/workflows/on-pull-request.yaml/badge.svg)
-  ![on-schedule](../../actions/workflows/on-schedule.yaml/badge.svg)
+Official website of the **Spatiotemporal Big Data Intelligence and Computing Lab (BAIST Lab)**,
+School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen.
 
-  # MiSevenJoy's Website
+🌐 **Website:** https://baist-lab.github.io/lab-site/
 
-  Visit **[baist-lab.github.io/lab-site](https://baist-lab.github.io/lab-site)** 🚀
+## About
 
-  _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
+This repository contains the source code and resources for the BAIST Lab website, including information about our research, team members, publications, projects, news, and recruitment.
+
+## Development
+
+The website is built with [Jekyll](https://jekyllrb.com/) and adapted from the [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs).
