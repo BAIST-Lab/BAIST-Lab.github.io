@@ -31,18 +31,29 @@ jobs:
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
+
             const file = "README.md";
-            let contents = readFileSync(file).toString();
-            const find = /\*\*\[.*\]\(.*\)\*\*/;
-            const host = "${{ steps.pages.outputs.host }}";
-            const path = "${{ steps.pages.outputs.base_path }}";
+            let contents = readFileSync(file, "utf8");
+
             const url = "${{ steps.pages.outputs.base_url }}";
-            const replace = `**[${host}${path}](${url})**`;
-            if (contents.match(find))
-              contents = contents.replace(find, replace);
-            else
-              contents = `Visit ${replace} 🚀\n\n` + contents;
-            writeFileSync(file, contents);
+
+            // Only update the dedicated Website line.
+            const find = /^🌐 \*\*Website:\*\* \[.*?\]\(.*?\)$/m;
+            const replace = `🌐 **Website:** [${url}](${url})`;
+
+            if (find.test(contents)) {
+              const updated = contents.replace(find, replace);
+
+              // Only write when the content actually changes.
+              if (updated !== contents) {
+                writeFileSync(file, updated);
+                console.log(`Website URL updated to ${url}`);
+              } else {
+                console.log("Website URL is already up to date.");
+              }
+            } else {
+              console.log("Website line not found in README. No changes made.");
+            }
 
       - name: Check if README changed
         id: files-changed
