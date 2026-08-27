@@ -1,9 +1,9 @@
 # Decap CMS 配置
-# 网站管理后台：https://misevenjoy.github.io/lab-site/admin/
+# 网站管理页面：https://baist-lab.github.io/lab-site/admin/
 
 backend:
   name: github
-  repo: MiSevenJoy/lab-site
+  repo: BAIST-Lab/lab-site
   branch: main
   # OAuth 代理地址（免费部署在 Render）
   base_url: https://lab-site-oauth.onrender.com
@@ -13,8 +13,8 @@ backend:
 media_folder: "images/uploads"
 public_folder: "images/uploads"
 
-site_url: https://misevenjoy.github.io/lab-site/
-display_url: https://misevenjoy.github.io/lab-site/
+site_url: https://baist-lab.github.io/lab-site/
+display_url: https://baist-lab.github.io/lab-site/
 
 # 后台界面语言
 locale: zh_Hans
