@@ -5,6 +5,6 @@
 
   # MiSevenJoy's Website
 
-  Visit **[misevenjoy.github.io/lab-site](https://misevenjoy.github.io/lab-site)** 🚀
+  Visit **[baist-lab.github.io/lab-site](https://baist-lab.github.io/lab-site)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
