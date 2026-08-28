@@ -399,12 +399,12 @@ collections:
               label: 图片
               name: image
               widget: image
-              hint: 上传新图片时会自动启用 16:7 首页横幅裁剪框，可拖动选择保留区域；保存为最大 1920 × 840 的 WebP。
+              hint: 上传新图片时会自动启用 16:7 首页横幅裁剪框，可拖动选择保留区域；保存为最大 2560 × 1120 的 WebP。
               media_library:
                 config:
                   crop_ratio: 2.285714
                   crop_label: 首页横幅 16:7
-                  max_width: 1920
+                  max_width: 2560
                   quality: 90
           - label: 页脚背景图
             name: footer

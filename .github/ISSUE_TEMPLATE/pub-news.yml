@@ -1,0 +1,70 @@
+name: Pub News
+description: 提交论文录用信息，并自动生成一条中英文新闻。
+title: "[Pub News] "
+labels:
+  - pub-news
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交后，工作流会自动生成新闻 Markdown 并重新构建网站。
+
+        论文条目使用 YAML 列表；需要添加多篇论文时，复制完整的四个字段并在前面加 `-`。每个条目中的题目、链接和中英文概括必须一一对应。
+
+  - type: input
+    id: venue
+    attributes:
+      label: 会议 / 期刊
+      description: 只填写会议或期刊名称，年份在下一项单独填写。
+      placeholder: 例如 KDD、ICLR、Pattern Recognition
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: 年份
+      placeholder: 例如 2027
+    validations:
+      required: true
+
+  - type: textarea
+    id: papers
+    attributes:
+      label: 论文条目
+      description: 中文工作概括建议约 100 字；链接请填写完整的 https 地址。
+      render: yaml
+      value: |-
+        - title: "论文英文题目"
+          link: "https://doi.org/..."
+          summary_zh: >-
+            中文工作概括，建议约 100 字。
+          summary_en: >-
+            English summary of the work.
+
+        # 多篇论文时，在下方继续添加：
+        # - title: "第二篇论文英文题目"
+        #   link: "https://..."
+        #   summary_zh: >-
+        #     第二篇论文的中文工作概括。
+        #   summary_en: >-
+        #     English summary of the second paper.
+    validations:
+      required: true
+
+  - type: textarea
+    id: cover
+    attributes:
+      label: 新闻封面
+      description: 可将 JPG、PNG 或 WebP 格式的会议/期刊图标直接拖入此处，或填写仓库内已有图片路径（例如 images/news/kdd26.webp）。上传图片会自动居中裁成 8:5，并保存为最大 1200 × 750 的 WebP。
+      placeholder: 将图片拖入此处，或填写 images/news/example.webp
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 发布确认
+      options:
+        - label: 我已检查会议/期刊、年份以及每篇论文的题目、链接和中英文概括。
+          required: true

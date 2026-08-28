@@ -18,6 +18,9 @@ details:
 
 
     DSTA4D 聚焦 4D 点云视频理解，旨在提升智能体对动态三维环境的感知与建模能力。该工作通过内容感知的自适应机制对空间信息和时间信息进行解耦与动态建模。模型能够根据输入点云序列自身的时空特征，灵活调整空间与时间信息的处理方式，使计算过程更加关注当前场景中的关键特征。
+
+
+    链接：[DSTA4D: Content-aware Adaptive Decoupling for 4D Point Cloud Video Understanding](https://doi.org/10.1016/j.patcog.2026.114754)
   en: >-
     Recently, our research work “DSTA4D: Content-aware Adaptive Decoupling for
     4D Point Cloud Video Understanding” was accepted by the international
@@ -25,4 +28,7 @@ details:
 
 
     DSTA4D focuses on 4D point cloud video understanding, with the goal of improving intelligent agents’ perception and modeling capabilities in dynamic 3D environments. The study decouples and dynamically models spatial and temporal information through a content-aware adaptive mechanism. The model can adjust how spatial and temporal features are processed according to the characteristics of each input sequence, allowing computation to focus more effectively on the most informative aspects of the scene.
+
+
+    Link: [DSTA4D: Content-aware Adaptive Decoupling for 4D Point Cloud Video Understanding](https://doi.org/10.1016/j.patcog.2026.114754)
 ---

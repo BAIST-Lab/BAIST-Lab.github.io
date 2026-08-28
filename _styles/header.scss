@@ -240,7 +240,9 @@ header.background::before {
 .home-hero {
   position: relative;
   width: 100%;
-  height: clamp(360px, 52vw, 620px);
+  // Match the 16:7 upload crop on desktop so the navbar does not appear to
+  // cover the top of the photo through a second object-fit crop.
+  height: clamp(360px, 43.75vw, 840px);
   overflow: hidden;
   background: var(--background-alt);
 }

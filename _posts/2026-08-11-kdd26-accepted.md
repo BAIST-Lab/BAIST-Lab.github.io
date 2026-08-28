@@ -21,6 +21,9 @@ details:
 
 
     RePatch 聚焦时间序列预测中的序列结构建模问题，从数据自身的信息特征出发，探索更加灵活的 Patch 构建方式。该工作结合熵引导的 Patch 结构学习与量化表示，使模型能够根据时间序列的内在特征学习更合适的表示结构，为时间序列预测提供新的建模方法。
+
+
+    链接：[HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal Prediction via Self-Partitional Mixture-of-Spatial-Experts](https://doi.org/10.1145/3770855.3817747)；[RePatch: Learning Entropy-Guided Patch Structures with Quantized Representations for Time Series Forecasting](https://doi.org/10.1145/3770855.3817683)
   en: >-
     Recently, two research works from our lab, “HURST: Heterogeneity-Adaptive
     Urban Foundation Models for Spatiotemporal Prediction via Self-Partitional
@@ -33,4 +36,7 @@ details:
 
 
     RePatch focuses on structural modeling for time series forecasting and explores a more flexible way of constructing patches based on the intrinsic information characteristics of time series. By combining entropy-guided patch structure learning with quantized representations, the method allows the model to learn more suitable representation structures from the data itself, offering a new approach to time series forecasting.
+
+
+    Links: [HURST: Heterogeneity-Adaptive Urban Foundation Models for Spatiotemporal Prediction via Self-Partitional Mixture-of-Spatial-Experts](https://doi.org/10.1145/3770855.3817747); [RePatch: Learning Entropy-Guided Patch Structures with Quantized Representations for Time Series Forecasting](https://doi.org/10.1145/3770855.3817683)
 ---
