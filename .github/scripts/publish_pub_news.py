@@ -23,7 +23,7 @@ from PIL import Image, ImageOps
 FIELD_LABELS = {
     "会议 / 期刊": "venue",
     "年份": "year",
-    "论文数量 k": "count",
+    "论文数量": "count",
     "论文条目": "papers",
     "新闻封面": "cover",
 }
@@ -97,9 +97,9 @@ def validate_link(value: Any, field: str) -> str:
 
 
 def parse_positive_count(value: str) -> int:
-    text = clean_inline(value, "论文数量 k")
+    text = clean_inline(value, "论文数量")
     if not re.fullmatch(r"[1-9]\d*", text):
-        fail("论文数量 k 必须是正整数，例如 1、2 或 3")
+        fail("论文数量必须是正整数，例如 1、2 或 3")
     return int(text)
 
 
@@ -136,7 +136,7 @@ def parse_papers(value: str, expected_count: int) -> list[Paper]:
     )
     if len(blocks) != expected_count:
         fail(
-            f"论文数量 k 为 {expected_count}，但检测到 {len(blocks)} 组完整的 "
+            f"论文数量为 {expected_count}，但检测到 {len(blocks)} 组完整的 "
             "“【论文开始】...【论文结束】”"
         )
 

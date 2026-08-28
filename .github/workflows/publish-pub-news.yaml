@@ -21,8 +21,7 @@ jobs:
   publish-news:
     if: >-
       (startsWith(github.event.issue.title, '[Pub News]') ||
-      contains(github.event.issue.labels.*.name, 'pub-news') ||
-      contains(github.event.issue.body, '### 论文数量 k')) &&
+      contains(github.event.issue.labels.*.name, 'pub-news')) &&
       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
       github.event.issue.author_association)
     runs-on: ubuntu-latest

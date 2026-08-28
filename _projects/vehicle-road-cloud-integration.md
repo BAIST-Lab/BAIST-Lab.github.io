@@ -11,7 +11,7 @@ end_date: "2028-12"
 role:
   zh: 参与
   en: Participant
-image: images/photo.webp
+image: images/others/photo.webp
 summary_text:
   zh: 面向车路云一体化环境，研究感知、通信与计算的协同方法及关键设备，支撑智能交通系统高效运行。
   en: This project studies coordinated sensing, communication, and computing methods and key equipment for efficient vehicle-road-cloud integrated transportation systems.

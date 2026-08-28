@@ -10,8 +10,8 @@ backend:
   auth_endpoint: auth
 
 # 上传图片保存位置
-media_folder: "images/uploads"
-public_folder: "images/uploads"
+media_folder: "images/site-appearance"
+public_folder: "images/site-appearance"
 
 site_url: https://baist-lab.github.io/
 display_url: https://baist-lab.github.io/
@@ -383,8 +383,8 @@ collections:
     label: 网站外观
     label_singular: 外观
     description: 管理首页导航栏下方的轮播大图与页脚背景图；轮播图可添加任意数量并调整顺序。
-    media_folder: "/images/uploads"
-    public_folder: "images/uploads"
+    media_folder: "/images/site-appearance"
+    public_folder: "images/site-appearance"
     files:
       - name: appearance
         label: 网站外观
@@ -447,7 +447,7 @@ collections:
                     crop_ratio: original
                     crop_label: 相册原图比例
                     max_width: 2400
-                    quality: 90
+                    quality: 100
               - label: 描述
                 name: caption
                 widget: object

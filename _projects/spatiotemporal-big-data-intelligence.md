@@ -11,7 +11,7 @@ end_date: "2026-09"
 role:
   zh: 主持
   en: Principal Investigator
-image: images/photo.webp
+image: images/others/photo.webp
 summary_text:
   zh: 围绕时空大数据的表示、挖掘、预测与智能决策开展研究，为智慧城市应用提供通用技术支撑。
   en: This project studies representation, mining, forecasting, and intelligent decision-making for spatiotemporal big data, supporting a broad range of smart-city applications.

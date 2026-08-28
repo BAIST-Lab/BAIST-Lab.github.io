@@ -1,6 +1,6 @@
 header_images:
-  - images/uploads/photo1.webp
-  - images/uploads/cover2.webp
-  - images/uploads/cover1.webp
-  - images/uploads/cover3.webp
-footer: images/uploads/top.webp
+  - images/site-appearance/photo1.webp
+  - images/site-appearance/cover2.webp
+  - images/site-appearance/cover1.webp
+  - images/site-appearance/cover3.webp
+footer: images/site-appearance/top.webp

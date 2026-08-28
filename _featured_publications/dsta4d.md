@@ -15,7 +15,7 @@ summary_text:
   en: The study focuses on 4D point cloud video understanding, with the goal of
     improving intelligent agents’ perception and modeling capabilities in
     dynamic 3D environments.
-link: https://www.sciencedirect.com/science/article/pii/S0031320326017188
+link: https://doi.org/10.1016/j.patcog.2026.114754
 details:
   zh: >-
     理解四维点云视频对于智能体感知外部环境中的动态变化至关重要。然而，由于长序列点云固有的帧间时间不一致性与空间无序性，构建统一的四维全局建模方法仍面临显著挑战。现有方法主要依赖静态、单一的网络架构，对所有输入数据采用统一的计算流程。这种方式忽视了不同视频在时空复杂度上的差异，导致计算资源分配效率较低，并限制了模型性能。

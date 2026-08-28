@@ -15,6 +15,7 @@ summary_text:
   en: This survey organizes cryptography-based privacy-preserving LLM research
     across data selection, fine-tuning, and inference, and outlines promising
     directions for future work.
+link: https://doi.org/10.1007/s10462-025-11466-6
 details:
   zh: >-
     基于 Transformer

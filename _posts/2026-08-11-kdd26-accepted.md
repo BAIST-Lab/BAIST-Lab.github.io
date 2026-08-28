@@ -1,7 +1,7 @@
 ---
 title: 实验室两项研究成果被 KDD 2026 接收
 title_en: Two Lab Papers Accepted by KDD 2026
-image: images/KDD26-Logo4-black.webp
+image: images/others/KDD26-Logo4-black.webp
 date: 2026-05-20
 news_type:
   preset: paper

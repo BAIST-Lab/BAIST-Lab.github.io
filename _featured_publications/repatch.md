@@ -16,6 +16,7 @@ summary_text:
   en: RePatch combines entropy-guided dynamic patching, temporal interaction
     modeling, and vector quantization to learn compact, transferable, and
     reusable discrete representations for time series forecasting.
+link: https://doi.org/10.1145/3770855.3817683
 details:
   zh: >-
     多元时间序列预测受到非平稳动态、持续演化的时间结构以及跨场景泛化能力有限等因素影响，仍是一项具有挑战性的基础任务。近年来的分块方法通过将序列切分为局部单元来增强长程建模能力，但大多依赖固定或适应性较弱的分块策略和连续隐表示，因而限制了模型的灵活性与时间模式复用能力。
