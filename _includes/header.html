@@ -1,5 +1,4 @@
 {% assign hero_images = site.data.site.header_images %}
-{% assign legacy_hero_image = page.header | default: site.data.site.header | default: site.header %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
@@ -125,13 +124,6 @@
   <button class="home-carousel-control home-carousel-prev" type="button" data-carousel-prev aria-label="Previous image">‹</button>
   <button class="home-carousel-control home-carousel-next" type="button" data-carousel-next aria-label="Next image">›</button>
   {% endif %}
-</div>
-  {% elsif legacy_hero_image %}
-<div class="home-hero">
-  <img
-    src="{{ legacy_hero_image | relative_url | uri_escape }}"
-    alt="{{ site.title_en | default: site.title | xml_escape }}"
-  >
 </div>
   {% endif %}
 {% endif %}

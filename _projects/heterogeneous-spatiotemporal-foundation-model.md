@@ -11,7 +11,6 @@ end_date: "2027-12"
 role:
   zh: 主持
   en: Principal Investigator
-image: images/others/photo.webp
 summary_text:
   zh: 面向多源异构时空数据，研究统一表征与预训练基础模型，提升跨场景知识迁移和下游任务适配能力。
   en: This project develops unified representations and pre-trained foundation models for heterogeneous spatiotemporal data, enabling knowledge transfer and adaptation across tasks and scenarios.
