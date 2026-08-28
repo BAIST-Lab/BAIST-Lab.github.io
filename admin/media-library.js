@@ -69,12 +69,12 @@
         return {
           repo: grab(/^\s*repo:\s*["']?([^"'\s#]+)/m),
           branch: grab(/^\s*branch:\s*["']?([^"'\s#]+)/m) || 'main',
-          mediaFolder: grab(/^\s*media_folder:\s*["']?([^"'\s#]+)/m) || 'images/uploads',
+          mediaFolder: grab(/^\s*media_folder:\s*["']?([^"'\s#]+)/m) || 'images/site-appearance',
           collections: collections,
         };
       })
       .catch(function () {
-        return { repo: '', branch: 'main', mediaFolder: 'images/uploads', collections: {} };
+        return { repo: '', branch: 'main', mediaFolder: 'images/site-appearance', collections: {} };
       });
     return repoInfoPromise;
   }
@@ -96,7 +96,7 @@
     }
     var coll = currentCollectionName();
     if (coll && info.collections && info.collections[coll]) return info.collections[coll];
-    return info.mediaFolder || 'images/uploads';
+    return info.mediaFolder || 'images/site-appearance';
   }
 
   function siteRootUrl() {
