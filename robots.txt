@@ -1,1 +1,1 @@
-Sitemap: https://baist-lab.github.io/lab-site/sitemap.xml
+Sitemap: https://baist-lab.github.io/sitemap.xml
