@@ -1,6 +1,6 @@
 ---
 title: DSTA4D
-category: cv
+category: embodied-multimodal-models
 name:
   zh: "DSTA4D: Content-aware Adaptive Decoupling for 4D Point Cloud Video
     Understanding"

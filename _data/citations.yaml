@@ -387,3 +387,19 @@ items:
     date: 2024-12-09
     link: https://doi.org/10.1109/ICDM59182.2024.00008
     type: conference
+  - id: doi:10.18653/v1/2026.findings-acl.1835
+    title: "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term
+      Reasoning"
+    authors:
+      - Zhengjun Huang
+      - Zhoujin Tian
+      - Qintian Guo
+      - Fangyuan Zhang
+      - Yingli Zhou
+      - Di Jiang
+      - Zeying Xie
+      - Xiaofang Zhou
+    publisher: Findings of ACL 2026
+    date: 2026-07-01
+    link: https://doi.org/10.18653/v1/2026.findings-acl.1835
+    type: conference
