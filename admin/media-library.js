@@ -1,6 +1,7 @@
 /*
   自定义图片媒体库：
   - 上传图片时自动压缩（限制最大宽度 + WebP / JPEG 质量）
+  - 相册图片按“所属栏目-时间戳”自动命名，其他栏目保留原文件名主体
   - 支持在后台裁剪宽度 / 高度
   - 通过 GitHub API 直接写入仓库（使用 Decap 已登录的 token）
   - 同时提供浏览已有图片并插入的能力
@@ -142,7 +143,9 @@
       if (r.status === 204) return null;
       return r.json().then(function (j) {
         if (r.ok) return j;
-        throw new Error((j && j.message) || ('HTTP ' + r.status));
+        var error = new Error((j && j.message) || ('HTTP ' + r.status));
+        error.status = r.status;
+        throw error;
       });
     }).catch(function (e) {
       if (e && e.message) throw e;
@@ -157,17 +160,26 @@
         var base64 = String(fr.result).split(',')[1];
         getRepoInfo().then(function (info) {
           var path = filePath.replace(/^\/+/, '');
+          var body = { message: 'Upload image', content: base64, branch: info.branch };
+          function duplicateError() {
+            var error = new Error('同目录已存在同名文件，请先修改本地图片文件名后再上传：' + path);
+            error.code = 'DUPLICATE_FILE';
+            return error;
+          }
           return api('/contents/' + path, 'GET')
             .then(function (existing) {
-              return existing && existing.sha ? existing.sha : null;
-            })
-            .catch(function () {
-              return null; // 文件不存在 → 新建，无需 sha
-            })
-            .then(function (sha) {
-              var body = { message: 'Upload image', content: base64, branch: info.branch };
-              if (sha) body.sha = sha; // 覆盖已存在文件时需要 sha
+              if (existing && existing.sha) throw duplicateError();
               return api('/contents/' + path, 'PUT', body);
+            }, function (error) {
+              if (error && error.status === 404) {
+                return api('/contents/' + path, 'PUT', body);
+              }
+              throw error;
+            })
+            .catch(function (error) {
+              if (error && error.code === 'DUPLICATE_FILE') throw error;
+              if (error && (error.status === 409 || error.status === 422)) throw duplicateError();
+              throw error;
             });
         }).then(function (response) {
           resolve({ path: filePath, response: response });
@@ -301,6 +313,34 @@
     base = base.replace(/[^\w\u4e00-\u9fa5-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
     if (!base) base = 'image-' + Date.now();
     return base;
+  }
+
+  function timestampedName(folder) {
+    var parts = String(folder || '').replace(/^\/+|\/+$/g, '').split('/');
+    var section = parts[parts.length - 1] || currentCollectionName() || 'image';
+    section = section.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+    if (!section) section = 'image';
+
+    var now = new Date();
+    function pad(value, length) { return String(value).padStart(length, '0'); }
+    var stamp = [
+      now.getFullYear(),
+      pad(now.getMonth() + 1, 2),
+      pad(now.getDate(), 2),
+      '-',
+      pad(now.getHours(), 2),
+      pad(now.getMinutes(), 2),
+      pad(now.getSeconds(), 2),
+      '-',
+      pad(now.getMilliseconds(), 3),
+    ].join('');
+    return section + '-' + stamp;
+  }
+
+  function uploadName(folder, originalName) {
+    return currentCollectionName() === 'gallery'
+      ? timestampedName(folder)
+      : sanitizeName(originalName);
   }
 
   function buildModal() {
@@ -595,7 +635,7 @@
         .then(function (blob) {
           processedBytes = blob.size;
           var extension = blob.type === 'image/webp' ? '.webp' : (blob.type === 'image/png' ? '.png' : '.jpg');
-          var filePath = (folder ? folder + '/' : '') + sanitizeName(f.name) + extension;
+          var filePath = (folder ? folder + '/' : '') + uploadName(folder, f.name) + extension;
           return uploadImage(filePath, blob);
         })
         .then(createUploadedPreview)

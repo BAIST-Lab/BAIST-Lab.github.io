@@ -52,6 +52,7 @@ collections:
     format: yaml-frontmatter
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} / {{title_en}}"
+    sortable_fields: [date, commit_date, title, title_en]
     fields:
       - {label: 中文标题（中文版主页卡片及详情页显示）, name: title, widget: string}
       - {label: English Title（英文版主页卡片及详情页显示）, name: title_en, widget: string}
@@ -138,6 +139,7 @@ collections:
     identifier_field: title
     slug: "{{slug}}"
     summary: "{{name.zh}} / {{name.en}}"
+    sortable_fields: [commit_date, date, title]
     fields:
       - {label: 英文姓名（用于网址文件名）, name: title, widget: string}
       - label: 姓名
@@ -224,6 +226,7 @@ collections:
     identifier_field: title
     slug: "{{slug}}"
     summary: "{{name.zh}} / {{name.en}}"
+    sortable_fields: [commit_date, start_date, end_date, title]
     fields:
       - {label: 项目英文简称（用于网址文件名）, name: title, widget: string, hint: 仅用于后台识别和生成网址，不在网页正文中显示。}
       - label: 项目名称
@@ -262,6 +265,7 @@ collections:
     identifier_field: title
     slug: "{{slug}}"
     summary: "{{name.zh}} / {{name.en}}"
+    sortable_fields: [commit_date, order, title]
     fields:
       - {label: 分类标识, name: title, widget: string, pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', '请使用小写英文字母、数字和连字符'], hint: 例如 spatiotemporal-foundation-models；代表工作使用该标识建立关联，创建后不建议修改。}
       - label: 分类名称
@@ -289,6 +293,7 @@ collections:
     identifier_field: title
     slug: "{{slug}}"
     summary: "{{name.zh}} / {{name.en}}"
+    sortable_fields: [commit_date, title, category]
     fields:
       - {label: 工作英文简称（用于网址文件名）, name: title, widget: string, hint: 仅用于后台识别和生成网址，不在网页正文中显示。}
       - label: 分类
@@ -453,8 +458,8 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - {label: 中文, name: zh, widget: string}
-                  - {label: English, name: en, widget: string}
+                  - {label: 中文, name: zh, widget: string, required: false}
+                  - {label: English, name: en, widget: string, required: false}
 
   # =====================================================
   # 招生招聘（加入我们）
