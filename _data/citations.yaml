@@ -138,7 +138,8 @@ items:
       - Jinglong Luo
       - Zhuo Zhang
       - Yehong Zhang
-      - Shiyu LiuYe Dong
+      - Shiyu Liu
+      - Ye Dong
       - Hui Wang
       - Yue Yu
       - Xun Zhou
@@ -162,7 +163,7 @@ items:
   - title: "Map as a Prompt: Learning Multi-Modal Spatial-Signal Foundation Models
       for Cross-scenario Wireless Localization"
     authors:
-      - Yong ChU
+      - Yong Chu
       - Xun Zhou
       - Zenglin Xu
       - Hui Wang
@@ -211,3 +212,178 @@ items:
     date: 2026-07-23
     link: https://doi.org/10.1145/3806196
     type: journal
+  - id: doi:10.1145/3770854.3780237
+    title: Malicious Domain Detection on Out-of-Distribution Gray Data through Graph
+      Contrastive Learning with Structure Aggregation
+    authors:
+      - Hongjie Gu
+      - Daojing He
+      - Xun Zhou
+    publisher: KDD 2026
+    date: 2026-04-20
+    link: https://doi.org/10.1145/3770854.3780237
+    type: conference
+  - id: doi:10.1109/ICDE65706.2026.00190
+    title: Listing Minimal Cores in Large Real-World Graphs
+    authors:
+      - Yukai Sun
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Raymond Chi-Wing Wong
+      - Xun Zhou
+      - Min Zhang
+    publisher: ICDE 2026
+    date: 2026-05-01
+    link: https://doi.org/10.1109/ICDE65706.2026.00190
+    type: conference
+  - id: doi:10.1145/3802103
+    title: Querying Cohesive Subgraphs in Temporal Graphs
+    authors:
+      - Yinyu Liu
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Xun Zhou
+    publisher: Proceedings of the ACM on Management of Data
+    date: 2026-05-18
+    link: https://doi.org/10.1145/3802103
+    type: journal
+  - title: "TranTac: Leveraging Transient Tactile Signals for Contact-Rich Robotic
+      Manipulation"
+    authors:
+      - Yinghao Wu
+      - Shuhong Hou
+      - Haowen Zheng
+      - Yichen Li
+      - Weiyi Lu
+      - Xun Zhou
+      - Yitian Shao
+    publisher: ICRA 2026
+    date: 2026-06-01
+    link: https://arxiv.org/abs/2509.16550
+    type: conference
+  - id: doi:10.1109/TKDE.2026.3701661
+    title: Efficient Maximal Directed Plex Enumeration with Worst-Case Time Guarantee
+    authors:
+      - Yukai Sun
+      - Shuohao Gao
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Xun Zhou
+      - Raymond Chi-Wing Wong
+    publisher: IEEE Transactions on Knowledge and Data Engineering
+    date: 2026-01-01
+    link: https://doi.org/10.1109/TKDE.2026.3701661
+    type: journal
+  - id: doi:10.1109/TKDE.2026.3701433
+    title: "Efficient Minimum k-Truss Search: A Decomposition-Based Approach"
+    authors:
+      - Qifan Zhang
+      - Yang Liu
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Xun Zhou
+    publisher: IEEE Transactions on Knowledge and Data Engineering
+    date: 2026-06-08
+    link: https://doi.org/10.1109/TKDE.2026.3701433
+    type: journal
+  - title: "UniTraj: Learning a Universal Trajectory Foundation Model from Billion-Scale
+      Worldwide Traces"
+    authors:
+      - Yuanshao Zhu
+      - James Jianqiao Yu
+      - Xiangyu Zhao
+      - Xun Zhou
+      - Liang Han
+      - Xuetao Wei
+      - Yuxuan Liang
+    publisher: NeurIPS 2025
+    date: 2025-09-18
+    link: https://proceedings.neurips.cc/paper_files/paper/2025/hash/3c215225324f9988858602dc92219615-Abstract-Conference.html
+    type: conference
+  - id: doi:10.18653/v1/2025.findings-acl.1234
+    title: Memory-augmented Query Reconstruction for LLM-based Knowledge Graph Reasoning
+    authors:
+      - Mufan Xu
+      - Gewen Liang
+      - Kehai Chen
+      - Wei Wang
+      - Xun Zhou
+      - Muyun Yang
+      - Tiejun Zhao
+      - Min Zhang
+    publisher: Findings of ACL 2025
+    date: 2025-07-31
+    link: https://doi.org/10.18653/v1/2025.findings-acl.1234
+    type: conference
+  - id: doi:10.1145/3711896.3737041
+    title: Maximum Degree-Based Quasi-Clique Search via an Iterative Framework
+    authors:
+      - Hongbo Xia
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Xun Zhou
+    publisher: KDD 2025
+    date: 2025-08-03
+    link: https://doi.org/10.1145/3711896.3737041
+    type: conference
+  - id: doi:10.1007/978-981-95-5699-1_1
+    title: Adaptive Downscaling on Inputs Improves Time Series Classification
+    authors:
+      - Xuanxuan Li
+      - Zenglin Xu
+      - Liangjian Wen
+      - Xun Zhou
+      - Jinghua Wang
+    publisher: PRCV 2025
+    date: 2025-01-01
+    link: https://doi.org/10.1007/978-981-95-5699-1_1
+    type: conference
+  - id: doi:10.1109/TKDE.2025.3569755
+    title: On Searching and Querying Maximum Directed (k, l)-Plex
+    authors:
+      - Shuohao Gao
+      - Kaiqiang Yu
+      - Shengxin Liu
+      - Cheng Long
+      - Xun Zhou
+    publisher: IEEE Transactions on Knowledge and Data Engineering
+    date: 2025-05-16
+    link: https://doi.org/10.1109/TKDE.2025.3569755
+    type: journal
+  - id: doi:10.1016/j.neunet.2025.108312
+    title: "TimeCNN: Refining Cross-Variable Interaction on Time Point for Time Series
+      Forecasting"
+    authors:
+      - Ao Hu
+      - Liangjian Wen
+      - Yong Dai
+      - Shiyi Qi
+      - Jun Wang
+      - Zhi Chen
+      - Xun Zhou
+      - Dongkai Wang
+      - Zenglin Xu
+      - Jiang Duan
+    publisher: Neural Networks
+    date: 2025-11-20
+    link: https://doi.org/10.1016/j.neunet.2025.108312
+    type: journal
+  - id: doi:10.1109/ICDM59182.2024.00008
+    title: "LISA: Learning-Integrated Space Partitioning Framework for Traffic Accident
+      Forecasting on Heterogeneous Spatiotemporal Data"
+    authors:
+      - Bang An
+      - Xun Zhou
+      - Amin Vahedian
+      - W. Nick Street
+      - Jinping Guan
+      - Jun Luo
+    publisher: ICDM 2024
+    date: 2024-12-09
+    link: https://doi.org/10.1109/ICDM59182.2024.00008
+    type: conference
