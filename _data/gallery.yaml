@@ -1,12 +1,33 @@
-# 相册照片（可在后台「相册」中增删改，image 为图片路径，caption 为描述）
 photos:
   - image: images/gallery/photo1.webp
-    caption: {zh: "", en: ""}
-  - image: images/gallery/photo2.webp
-    caption: {zh: "", en: ""}
-  - image: images/gallery/photo3.webp
-    caption: {zh: "", en: ""}
-  - image: images/gallery/photo4.webp
-    caption: {zh: "", en: ""}
-  - image: images/gallery/photo5.webp
-    caption: {zh: "", en: ""}
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/cover1.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/cover3.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/graduate.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/graduate2.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/bigdata2.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/kddpic1.webp
+    caption:
+      zh: " "
+      en: " "
+  - image: images/gallery/cover2.webp
+    caption:
+      zh: " "
+      en: " "
