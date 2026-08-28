@@ -21,7 +21,8 @@ jobs:
   publish-news:
     if: >-
       (startsWith(github.event.issue.title, '[Pub News]') ||
-      contains(github.event.issue.labels.*.name, 'pub-news')) &&
+      contains(github.event.issue.labels.*.name, 'pub-news') ||
+      contains(github.event.issue.body, '### 论文数量 k')) &&
       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
       github.event.issue.author_association)
     runs-on: ubuntu-latest
@@ -38,8 +39,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install image and YAML dependencies
-        run: python -m pip install --disable-pip-version-check PyYAML Pillow
+      - name: Install image dependency
+        run: python -m pip install --disable-pip-version-check Pillow
 
       - name: Generate news post
         id: generate
@@ -49,6 +50,21 @@ jobs:
           python .github/scripts/publish_pub_news.py
           --event "$GITHUB_EVENT_PATH"
           --repo-root "$GITHUB_WORKSPACE"
+
+      - name: Set generated issue title
+        if: github.event.issue.title != steps.generate.outputs.issue_title
+        uses: actions/github-script@v9
+        env:
+          ISSUE_TITLE: ${{ steps.generate.outputs.issue_title }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number: context.issue.number,
+              title: process.env.ISSUE_TITLE,
+            });
 
       - name: Commit and push generated news
         if: steps.generate.outputs.changed == 'true'

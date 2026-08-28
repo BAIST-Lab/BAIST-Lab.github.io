@@ -17,13 +17,13 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, NoReturn
 
-import yaml
 from PIL import Image, ImageOps
 
 
 FIELD_LABELS = {
     "会议 / 期刊": "venue",
     "年份": "year",
+    "论文数量 k": "count",
     "论文条目": "papers",
     "新闻封面": "cover",
 }
@@ -84,7 +84,7 @@ def parse_issue_sections(body: str) -> dict[str, str]:
 
 
 def strip_code_fence(value: str) -> str:
-    match = re.fullmatch(r"```(?:yaml|yml)?\s*\n([\s\S]*?)\n```", value.strip())
+    match = re.fullmatch(r"```[^\n]*\n([\s\S]*?)\n```", value.strip())
     return match.group(1) if match else value.strip()
 
 
@@ -96,31 +96,68 @@ def validate_link(value: Any, field: str) -> str:
     return link
 
 
-def parse_papers(value: str) -> list[Paper]:
-    try:
-        data = yaml.safe_load(strip_code_fence(value))
-    except yaml.YAMLError as error:
-        fail(f"论文条目不是有效的 YAML：{error}")
+def parse_positive_count(value: str) -> int:
+    text = clean_inline(value, "论文数量 k")
+    if not re.fullmatch(r"[1-9]\d*", text):
+        fail("论文数量 k 必须是正整数，例如 1、2 或 3")
+    return int(text)
 
-    if isinstance(data, dict) and "papers" in data:
-        data = data["papers"]
-    if not isinstance(data, list) or not data:
-        fail("论文条目必须是至少包含一项的 YAML 列表")
+
+def parse_work_line(value: str, index: int, field: str) -> str:
+    prefix = f"{field}："
+    if not value.strip().startswith(prefix):
+        fail(f"第 {index} 篇的{field}必须独占一行，并以“{prefix}”开头")
+    content = clean_inline(value.strip()[len(prefix) :], f"第 {index} 篇{field}")
+    placeholders = {
+        "论文英文题目",
+        "https://doi.org/...",
+        "中文工作概括，建议约 100 字。",
+        "English summary of the work.",
+    }
+    if content in placeholders:
+        fail(f"第 {index} 篇的{field}仍是提示文字，请替换为实际内容")
+    return content
+
+
+def parse_papers(value: str, expected_count: int) -> list[Paper]:
+    text = strip_code_fence(value)
+    opening_marker = "【论文开始】"
+    closing_marker = "【论文结束】"
+    opening_count = text.count(opening_marker)
+    closing_count = text.count(closing_marker)
+    if opening_count != closing_count:
+        fail(
+            "论文条目中的“【论文开始】”与“【论文结束】”数量不一致："
+            f"{opening_count} 个开始标签，{closing_count} 个结束标签"
+        )
+
+    blocks = re.findall(
+        rf"{re.escape(opening_marker)}([\s\S]*?){re.escape(closing_marker)}", text
+    )
+    if len(blocks) != expected_count:
+        fail(
+            f"论文数量 k 为 {expected_count}，但检测到 {len(blocks)} 组完整的 "
+            "“【论文开始】...【论文结束】”"
+        )
 
     papers: list[Paper] = []
-    for index, item in enumerate(data, start=1):
-        if not isinstance(item, dict):
-            fail(f"第 {index} 个论文条目必须是对象")
+    for index, block_value in enumerate(blocks, start=1):
+        lines = [line.strip() for line in block_value.splitlines() if line.strip()]
+        if len(lines) != 4:
+            fail(
+                f"第 {index} 个论文块必须正好包含四行：题目、链接、"
+                "中文概要、英文概要"
+            )
+        title = parse_work_line(lines[0], index, "题目")
+        link = parse_work_line(lines[1], index, "链接")
+        summary_zh = parse_work_line(lines[2], index, "中文概要")
+        summary_en = parse_work_line(lines[3], index, "英文概要")
         papers.append(
             Paper(
-                title=clean_inline(item.get("title"), f"第 {index} 篇题目"),
-                link=validate_link(item.get("link"), f"第 {index} 篇链接"),
-                summary_zh=clean_inline(
-                    item.get("summary_zh"), f"第 {index} 篇中文工作概括"
-                ),
-                summary_en=clean_inline(
-                    item.get("summary_en"), f"第 {index} 篇英文工作概括"
-                ),
+                title=title,
+                link=validate_link(link, f"第 {index} 篇链接"),
+                summary_zh=summary_zh,
+                summary_en=summary_en,
             )
         )
     return papers
@@ -279,17 +316,21 @@ def block(name: str, paragraphs: list[str]) -> list[str]:
     return lines
 
 
+def publication_titles(venue_year: str, count: int) -> tuple[str, str]:
+    title_zh = f"实验室 {count} 篇研究成果被 {venue_year} 接收"
+    if count == 1:
+        title_en = f"Lab Paper Accepted by {venue_year}"
+    else:
+        title_en = f"{count} Lab Papers Accepted by {venue_year}"
+    return title_zh, title_en
+
+
 def render_post(
     venue: str, year: str, papers: list[Paper], image_path: str, post_date: str
 ) -> str:
     venue_year = f"{venue} {year}"
     count = len(papers)
-    if count == 1:
-        title_zh = f"实验室研究成果被 {venue_year} 接收"
-        title_en = f"Lab Paper Accepted by {venue_year}"
-    else:
-        title_zh = f"实验室 {count} 项研究成果被 {venue_year} 接收"
-        title_en = f"{count} Lab Papers Accepted by {venue_year}"
+    title_zh, title_en = publication_titles(venue_year, count)
 
     if count == 1:
         announcement_zh = (
@@ -301,7 +342,7 @@ def render_post(
         )
     else:
         announcement_zh = (
-            f"近日，实验室 {count} 项研究成果 {quote_zh_titles(papers)} 被 "
+            f"近日，实验室 {count} 篇研究成果 {quote_zh_titles(papers)} 被 "
             f"{venue_year} 接收。"
         )
         announcement_en = (
@@ -368,7 +409,8 @@ def main() -> int:
     year = clean_inline(sections["year"], "年份")
     if not re.fullmatch(r"20\d{2}", year):
         fail("年份必须是四位数字，例如 2027")
-    papers = parse_papers(sections["papers"])
+    expected_count = parse_positive_count(sections["count"])
+    papers = parse_papers(sections["papers"], expected_count)
 
     created_at = str(issue.get("created_at") or "")
     try:
@@ -396,6 +438,8 @@ def main() -> int:
     write_output("changed", "true" if changed else "false")
     write_output("post_path", post_relative)
     write_output("cover_path", created_cover_path)
+    issue_title, _ = publication_titles(f"{venue} {year}", expected_count)
+    write_output("issue_title", issue_title)
     print(f"Generated {post_relative} for {len(papers)} paper(s)")
     return 0
 

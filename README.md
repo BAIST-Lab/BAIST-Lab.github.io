@@ -3,7 +3,7 @@
 Official website of the **Spatiotemporal Big Data Intelligence and Computing Lab (BAIST Lab)**,
 School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen.
 
-🌐 **Website:** https://baist-lab.github.io/lab-site/
+🌐 **Website:** https://baist-lab.github.io/
 
 ## About
 

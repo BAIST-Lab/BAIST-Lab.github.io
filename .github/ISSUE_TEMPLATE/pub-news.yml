@@ -1,6 +1,6 @@
 name: Pub News
 description: 提交论文录用信息，并自动生成一条中英文新闻。
-title: "[Pub News] "
+title: "[Pub News] 请勿修改，提交后自动生成标题"
 labels:
   - pub-news
 body:
@@ -9,7 +9,9 @@ body:
       value: |
         提交后，工作流会自动生成新闻 Markdown 并重新构建网站。
 
-        论文条目使用 YAML 列表；需要添加多篇论文时，复制完整的四个字段并在前面加 `-`。每个条目中的题目、链接和中英文概括必须一一对应。
+        Issue 标题无需填写或修改；提交后，工作流会根据论文数量、会议/期刊和年份自动生成标题。
+
+        每篇论文使用一对“【论文开始】”和“【论文结束】”标记。多篇论文时，完整复制一组标记和其中四行内容；工作流会检查论文组数是否与“论文数量 k”一致。
 
   - type: input
     id: venue
@@ -28,27 +30,28 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: count
+    attributes:
+      label: 论文数量 k
+      description: 只填写正整数；工作流会检查该数字是否与下方的论文组数一致。
+      placeholder: 例如 2
+    validations:
+      required: true
+
   - type: textarea
     id: papers
     attributes:
       label: 论文条目
-      description: 中文工作概括建议约 100 字；链接请填写完整的 https 地址。
-      render: yaml
+      description: 将每个字段冒号后的提示文字替换为实际内容。每项必须独占一行；多篇论文时，完整复制整个论文块。
+      render: text
       value: |-
-        - title: "论文英文题目"
-          link: "https://doi.org/..."
-          summary_zh: >-
-            中文工作概括，建议约 100 字。
-          summary_en: >-
-            English summary of the work.
-
-        # 多篇论文时，在下方继续添加：
-        # - title: "第二篇论文英文题目"
-        #   link: "https://..."
-        #   summary_zh: >-
-        #     第二篇论文的中文工作概括。
-        #   summary_en: >-
-        #     English summary of the second paper.
+        【论文开始】
+        题目：论文英文题目
+        链接：https://doi.org/...
+        中文概要：中文工作概括，建议约 100 字。
+        英文概要：English summary of the work.
+        【论文结束】
     validations:
       required: true
 
