@@ -2,7 +2,7 @@
 title: Xun Zhou
 name:
   zh: 周逊（团队负责人）
-  en: Xun Zhou
+  en: Xun Zhou (Director)
 image: images/team/zhouxun.webp
 email: zhouxun2023@hit.edu.cn
 date: 2023-09-01
@@ -13,7 +13,6 @@ description:
   PhD Advisor: null
 other_info:
   - zh: 国家级青年人才
-    en: NSFC National Young Talent
 homepage: https://homepage.hit.edu.cn/zhouxun2023
 bio:
   zh: |-

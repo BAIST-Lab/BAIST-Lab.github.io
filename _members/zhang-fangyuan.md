@@ -14,7 +14,6 @@ description:
   National-level Young Talent: null
 other_info:
   - zh: 国家级青年人才
-    en: NSFC National Young Talent
 homepage: https://homepage.hit.edu.cn/zhangfangyuan
 bio:
   zh: |-

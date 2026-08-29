@@ -1,6 +1,7 @@
 {%- assign v = include.value -%}
-{%- if v.zh and v.en -%}
-  <span class="lang-zh">{{ v.zh }}</span><span class="lang-en">{{ v.en }}</span>
+{%- if v.zh or v.en -%}
+  {%- if v.zh != blank -%}<span class="lang-zh">{{ v.zh }}</span>{%- endif -%}
+  {%- if v.en != blank -%}<span class="lang-en">{{ v.en }}</span>{%- endif -%}
 {%- else -%}
   {{ v }}
 {%- endif -%}

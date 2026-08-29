@@ -187,7 +187,7 @@ collections:
         summary: "{{fields.zh}} / {{fields.en}}"
         fields:
           - {label: 中文, name: zh, widget: string}
-          - {label: English, name: en, widget: string}
+          - {label: English, name: en, widget: string, required: false}
       - label: 姓名别名（用于论文检索）
         name: aliases
         widget: list

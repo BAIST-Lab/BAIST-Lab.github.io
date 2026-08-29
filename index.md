@@ -2,8 +2,11 @@
 body_class: page-top-level
 ---
 
-<h1 class="lang-zh">时空大数据智能与计算实验室</h1>
-<h1 class="lang-en">Spatiotemporal Big Data Intelligence and Computing Lab</h1>
+<h1 class="home-lab-heading">
+  <span class="lang-zh">时空大数据智能与计算实验室</span>
+  <span class="lang-en"><a href="https://baist-lab.github.io/">Big Data AI &amp; Spatial-Temporal Computing Lab</a> (BAIST)</span>
+</h1>
+<p class="home-lab-english-name lang-zh"><a href="https://baist-lab.github.io/">Big Data AI &amp; Spatial-Temporal Computing Lab</a> (BAIST)</p>
 
 {% include section.html %}
 

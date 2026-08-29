@@ -75,6 +75,30 @@ body.page-top-level main > section:first-child > h1:first-child + h1 {
   margin-bottom: 0;
 }
 
+.home-lab-heading a,
+.home-lab-english-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-lab-heading {
+  text-transform: none;
+}
+
+.home-lab-heading a:hover,
+.home-lab-english-name a:hover {
+  color: var(--primary);
+}
+
+.home-lab-english-name {
+  margin: 10px 0 0;
+  font-family: var(--heading);
+  font-size: 1.15rem;
+  font-weight: var(--regular);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 :where(h1, h2, h3, h4, h5, h6) > .icon {
   margin-right: 1em;
   color: var(--light-gray);
