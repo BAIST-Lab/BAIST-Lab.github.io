@@ -245,7 +245,7 @@ items:
       - Shengxin Liu
       - Cheng Long
       - Xun Zhou
-    publisher: Proceedings of the ACM on Management of Data
+    publisher: Proceedings of the ACM on Management of Data (SIGMOD)
     date: 2026-05-18
     link: https://doi.org/10.1145/3802103
     type: journal
@@ -290,8 +290,8 @@ items:
     date: 2026-06-08
     link: https://doi.org/10.1109/TKDE.2026.3701433
     type: journal
-  - title: "UniTraj: Learning a Universal Trajectory Foundation Model from Billion-Scale
-      Worldwide Traces"
+  - title: "UniTraj: Learning a Universal Trajectory Foundation Model from
+      Billion-Scale Worldwide Traces"
     authors:
       - Yuanshao Zhu
       - James Jianqiao Yu
@@ -305,7 +305,8 @@ items:
     link: https://proceedings.neurips.cc/paper_files/paper/2025/hash/3c215225324f9988858602dc92219615-Abstract-Conference.html
     type: conference
   - id: doi:10.18653/v1/2025.findings-acl.1234
-    title: Memory-augmented Query Reconstruction for LLM-based Knowledge Graph Reasoning
+    title: Memory-augmented Query Reconstruction for LLM-based Knowledge Graph
+      Reasoning
     authors:
       - Mufan Xu
       - Gewen Liang
@@ -356,8 +357,8 @@ items:
     link: https://doi.org/10.1109/TKDE.2025.3569755
     type: journal
   - id: doi:10.1016/j.neunet.2025.108312
-    title: "TimeCNN: Refining Cross-Variable Interaction on Time Point for Time Series
-      Forecasting"
+    title: "TimeCNN: Refining Cross-Variable Interaction on Time Point for Time
+      Series Forecasting"
     authors:
       - Ao Hu
       - Liangjian Wen
@@ -374,8 +375,8 @@ items:
     link: https://doi.org/10.1016/j.neunet.2025.108312
     type: journal
   - id: doi:10.1109/ICDM59182.2024.00008
-    title: "LISA: Learning-Integrated Space Partitioning Framework for Traffic Accident
-      Forecasting on Heterogeneous Spatiotemporal Data"
+    title: "LISA: Learning-Integrated Space Partitioning Framework for Traffic
+      Accident Forecasting on Heterogeneous Spatiotemporal Data"
     authors:
       - Bang An
       - Xun Zhou
@@ -388,8 +389,8 @@ items:
     link: https://doi.org/10.1109/ICDM59182.2024.00008
     type: conference
   - id: doi:10.18653/v1/2026.findings-acl.1835
-    title: "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient Long-Term
-      Reasoning"
+    title: "LiCoMemory: Lightweight and Cognitive Agentic Memory for Efficient
+      Long-Term Reasoning"
     authors:
       - Zhengjun Huang
       - Zhoujin Tian
