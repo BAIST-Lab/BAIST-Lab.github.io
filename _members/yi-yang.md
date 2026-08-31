@@ -2,7 +2,7 @@
 title: Yi Yang
 name:
   zh: 杨屹
-  en: "2024"
+  en: Yi Yang
 image: images/team/yang-yi.webp
 date: 2024-09-30
 role: undergrad
